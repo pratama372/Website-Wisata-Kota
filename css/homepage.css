@@ -122,3 +122,22 @@ nav a {
     font-size: 18px;
     max-width: 600px;
   }
+
+/* css destinations */
+  .destinations {
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  .destinations h2 {
+    margin-bottom: 0px;
+  }
+
+  .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px; 
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
