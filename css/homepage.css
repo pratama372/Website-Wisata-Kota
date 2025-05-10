@@ -48,3 +48,50 @@
     color: orangered;
     transition: color 0.3s ease;
   }
+
+  /* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Responsive nav for mobile */
+@media (max-width: 768px) {
+.hamburger {
+    display: flex;
+}
+
+nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+nav.show {
+    display: flex;
+}
+
+nav a {
+    margin: 15px 0;
+    }
+}
