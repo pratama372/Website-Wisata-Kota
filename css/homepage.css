@@ -351,3 +351,87 @@ nav a {
   .side-article img:hover {
     transform: scale(1.05); 
   }
+
+  /* css Gallery */
+  .gallery {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .gallery-grid {
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    overflow-x: scroll;
+    scroll-behavior: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+  }
+
+  .gallery-grid.dragging{
+    cursor: grabbing;
+  }
+
+  .gallery-grid::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .gallery-grid img {
+    width: 300px; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  /* Modal pop up */
+  .image-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.8); 
+  }
+
+  .image-modal .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    object-fit: contain;
+  }
+
+  .image-modal .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .gallery-grid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+
+  .gallery-grid img {
+    max-height: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
