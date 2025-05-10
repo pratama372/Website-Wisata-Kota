@@ -352,7 +352,7 @@ nav a {
     transform: scale(1.05); 
   }
 
-  /* css Gallery */
+/* css Gallery */
   .gallery {
     text-align: center;
     padding: 60px 20px;
@@ -385,7 +385,7 @@ nav a {
     cursor: pointer;
   }
 
-  /* Modal pop up */
+/* Modal pop up */
   .image-modal {
     display: none; 
     position: fixed; 
@@ -436,7 +436,7 @@ nav a {
     transform: scale(1.05);
   }
 
-  /* footer */
+/* footer */
   footer {
     background-color: gray;
     color: black;
@@ -475,4 +475,23 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  /* Responsive Grid */
+  @media (max-width: 768px) {
+    .destination-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .destination-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .destination-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
