@@ -142,7 +142,7 @@ nav a {
     padding: 40px 20px;
   }
 
-  /* DESTINATIONS CARD */
+/* DESTINATIONS CARD */
   .destination-card {
     position: relative;
     overflow: hidden;
@@ -187,7 +187,7 @@ nav a {
     font-weight: 400;
   }
 
-  /* css HIGHLIGHT */
+/* css HIGHLIGHT */
   .highlights-section {
     text-align: center;
     padding: 50px 20px;
@@ -236,4 +236,118 @@ nav a {
   .highlight-video {
     flex: 1 1 500px;
     max-width: 560px;
+  }
+
+/* tips travel */
+  .travel-tips {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .travel-tips h1 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .travel-tips .subtitle {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+
+  .content {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main-article {
+    flex: 1 1 300px;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .main-article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .article-info {
+    margin-top: 5px;
+  }
+
+  .article-info .date {
+    font-size: 14px;
+    color: #999;
+  }
+
+  .article-info h2 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+
+  .article-info .description {
+    font-size: 15px;
+    color: #555;
+    margin: 0px 0;
+  }
+
+  .read-more {
+    display: inline-block;
+    margin-top: 5px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .side-articles {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
+
+  .side-article {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 15px;
+  }
+
+  .side-article img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .side-article .date {
+    font-size: 12px;
+    color: #999;
+  }
+
+  .side-article h3 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  .side-article .description {
+    font-size: 14px;
+    color: #555;
+  }
+
+/* Efek pop up membesar saat hover gambar */
+  .main-article img,
+  .side-article img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .main-article img:hover,
+  .side-article img:hover {
+    transform: scale(1.05); 
   }
