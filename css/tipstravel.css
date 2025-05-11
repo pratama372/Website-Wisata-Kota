@@ -278,3 +278,22 @@ footer a {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .destination-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .destination-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .destination-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
