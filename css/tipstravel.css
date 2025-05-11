@@ -92,3 +92,62 @@ nav a:hover {
     margin: 15px 0;
   }
 }
+
+/* HERO SECTION */
+.herotipstravel {
+  height: 400px;
+  background: url('../assets/map.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1; 
+}
+
+.heromusimpanas {
+  height: 400px;
+  background: url('../assets/balipanas.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.heromusimhujan {
+  height: 400px;
+  background: url('../assets/balihujan.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.heroplantravel {
+  height: 400px;
+  background: url('../assets/plantravel.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
