@@ -90,3 +90,18 @@ function checkScrollLoop() {
     slider.scrollLeft = half - slider.clientWidth;
   }
 }
+
+slider.querySelectorAll('img').forEach(img => {
+  img.addEventListener('click', (e) => {
+    if (isMoved) {
+      e.preventDefault();
+      e.stopPropagation();
+    } else {
+      modal.style.display = 'block';
+      modalImg.src = img.src;
+    }
+  });
+
+  img.setAttribute('draggable', 'false');
+  img.addEventListener('dragstart', (e) => e.preventDefault());
+});
