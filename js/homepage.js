@@ -51,3 +51,10 @@ slider.addEventListener('mousedown', (e) => {
 
 slider.addEventListener('mouseleave', stopDragging);
 slider.addEventListener('mouseup', stopDragging);
+
+function stopDragging() {
+  if (!isDragging) return;
+  isDragging = false;
+  slider.classList.remove('dragging');
+  momentumScroll();
+}
