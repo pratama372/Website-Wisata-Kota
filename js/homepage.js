@@ -37,3 +37,14 @@ const modalImg = document.getElementById('modalImg');
 const closeBtn = document.querySelector('.close');
 
 slider.scrollLeft = slider.scrollWidth / 2;
+
+slider.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  isMoved = false;
+  startX = e.pageX - slider.offsetLeft;
+  scrollStart = slider.scrollLeft;
+  lastMoveX = e.pageX;
+  velocity = 0;
+  cancelAnimationFrame(momentumID);
+  slider.classList.add('dragging');
+});
