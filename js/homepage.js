@@ -23,3 +23,11 @@ setInterval(changeBackground, 3000);
 // function slider galeri
 const slider = document.querySelector('.gallery-grid');
 slider.innerHTML += slider.innerHTML;
+
+let isDragging = false;
+let startX;
+let scrollStart;
+let isMoved = false;
+let lastMoveX = 0;
+let velocity = 0;
+let momentumID;
