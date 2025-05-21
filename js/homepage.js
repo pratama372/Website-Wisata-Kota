@@ -31,3 +31,7 @@ let isMoved = false;
 let lastMoveX = 0;
 let velocity = 0;
 let momentumID;
+
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImg');
+const closeBtn = document.querySelector('.close');
