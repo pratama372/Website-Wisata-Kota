@@ -58,3 +58,18 @@ function stopDragging() {
   slider.classList.remove('dragging');
   momentumScroll();
 }
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = x - startX;
+  const now = e.pageX;
+  velocity = now - lastMoveX;
+  lastMoveX = now;
+
+  if (Math.abs(walk) > 5) isMoved = true;
+  slider.scrollLeft = scrollStart - walk;
+
+  checkScrollLoop();
+});
