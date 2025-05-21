@@ -35,3 +35,5 @@ let momentumID;
 const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImg');
 const closeBtn = document.querySelector('.close');
+
+slider.scrollLeft = slider.scrollWidth / 2;
