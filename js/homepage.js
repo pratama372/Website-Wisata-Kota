@@ -81,3 +81,12 @@ function momentumScroll() {
   checkScrollLoop();
   momentumID = requestAnimationFrame(momentumScroll);
 }
+
+function checkScrollLoop() {
+  const half = slider.scrollWidth / 2;
+  if (slider.scrollLeft <= 0) {
+    slider.scrollLeft = half;
+  } else if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
+    slider.scrollLeft = half - slider.clientWidth;
+  }
+}
