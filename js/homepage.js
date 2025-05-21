@@ -73,3 +73,11 @@ slider.addEventListener('mousemove', (e) => {
 
   checkScrollLoop();
 });
+
+function momentumScroll() {
+  if (Math.abs(velocity) < 0.5) return;
+  slider.scrollLeft -= velocity;
+  velocity *= 0.95;
+  checkScrollLoop();
+  momentumID = requestAnimationFrame(momentumScroll);
+}
