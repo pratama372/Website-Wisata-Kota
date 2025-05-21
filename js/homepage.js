@@ -18,3 +18,8 @@ function changeBackground() {
 
 changeBackground();
 setInterval(changeBackground, 3000);
+
+
+// function slider galeri
+const slider = document.querySelector('.gallery-grid');
+slider.innerHTML += slider.innerHTML;
