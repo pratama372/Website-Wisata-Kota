@@ -105,3 +105,10 @@ slider.querySelectorAll('img').forEach(img => {
   img.setAttribute('draggable', 'false');
   img.addEventListener('dragstart', (e) => e.preventDefault());
 });
+
+closeBtn.onclick = function() {
+  modal.style.display = 'none';
+}
+modal.onclick = function() {
+  modal.style.display = 'none';
+}
