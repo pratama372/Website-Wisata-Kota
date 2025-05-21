@@ -48,3 +48,6 @@ slider.addEventListener('mousedown', (e) => {
   cancelAnimationFrame(momentumID);
   slider.classList.add('dragging');
 });
+
+slider.addEventListener('mouseleave', stopDragging);
+slider.addEventListener('mouseup', stopDragging);
