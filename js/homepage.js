@@ -52,6 +52,10 @@ slider.addEventListener('mousedown', (e) => {
 slider.addEventListener('mouseleave', stopDragging);
 slider.addEventListener('mouseup', stopDragging);
 
+slider.addEventListener('scroll', () => {
+  requestAnimationFrame(checkScrollLoop);
+});
+
 function stopDragging() {
   if (!isDragging) return;
   isDragging = false;
