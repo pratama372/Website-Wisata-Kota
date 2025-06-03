@@ -88,10 +88,13 @@ function momentumScroll() {
 
 function checkScrollLoop() {
   const half = slider.scrollWidth / 2;
+  const maxScroll = slider.scrollWidth;
+  const buffer = 10;
+
   if (slider.scrollLeft <= 0) {
     slider.scrollLeft = half;
-  } else if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
-    slider.scrollLeft = half - slider.clientWidth;
+  } else if (slider.scrollLeft >= maxScroll - slider.clientWidth - buffer) {
+    slider.scrollLeft -= half;
   }
 }
 
