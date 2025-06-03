@@ -95,6 +95,24 @@ function checkScrollLoop() {
   }
 }
 
+// Function(Galeri): Scroll otomatis ke kanan
+let pauseAutoScroll = false;
+
+slider.addEventListener('mouseenter', () => pauseAutoScroll = true);
+slider.addEventListener('mouseleave', () => pauseAutoScroll = false);
+
+
+function autoScrollRight() {
+  if (!pauseAutoScroll && !isDragging) {
+    slider.scrollLeft += 0.5; 
+    checkScrollLoop(); 
+  }
+  requestAnimationFrame(autoScrollRight);
+}
+
+autoScrollRight();
+
+
 slider.querySelectorAll('img').forEach(img => {
   img.addEventListener('click', (e) => {
     if (isMoved) {
