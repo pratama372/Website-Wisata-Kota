@@ -345,6 +345,26 @@ nav a {
     color: #555;
   }
 
+  @media (max-width: 768px) {
+  .side-article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .side-article img {
+    width: 100%;
+    height: auto;
+    min-width: unset;
+    min-height: unset;
+    max-width: 400px;
+  }
+
+  .side-article div {
+    margin-top: 10px;
+  }
+}
+
 /* Efek pop up membesar saat hover gambar */
   .main-article img,
   .side-article img {
