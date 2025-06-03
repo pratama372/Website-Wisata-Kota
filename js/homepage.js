@@ -1,4 +1,4 @@
-// funcion slide gambar di hero
+// Function slide gambar di hero
 const heroSection = document.querySelector('.hero');
 const images = [
     'assets/kecaksunset.jpeg',
@@ -112,7 +112,7 @@ function autoScrollRight() {
 
 autoScrollRight();
 
-
+// Function(Galeri): Menambahakan event klik pada gambar untuk membuka modal jika tidak sedang di drag
 slider.querySelectorAll('img').forEach(img => {
   img.addEventListener('click', (e) => {
     if (isMoved) {
@@ -128,6 +128,7 @@ slider.querySelectorAll('img').forEach(img => {
   img.addEventListener('dragstart', (e) => e.preventDefault());
 });
 
+// Function(modal):Menambahkan fungsi menutup modal saat klik tombol close atau diluar gambar
 closeBtn.onclick = function() {
   modal.style.display = 'none';
 }
