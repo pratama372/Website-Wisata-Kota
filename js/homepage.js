@@ -91,7 +91,7 @@ function checkScrollLoop() {
   const maxScroll = slider.scrollWidth;
   const buffer = 10;
 
-  if (slider.scrollLeft <= 0) {
+  if (slider.scrollLeft <= buffer) {
     slider.scrollLeft = half;
   } else if (slider.scrollLeft >= maxScroll - slider.clientWidth - buffer) {
     slider.scrollLeft -= half;
