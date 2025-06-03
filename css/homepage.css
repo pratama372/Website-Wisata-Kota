@@ -326,8 +326,11 @@ nav a {
   .side-article img {
     width: 200px;
     height: 150px;
+    min-width: 200px;
+    min-height: 150px;
     object-fit: cover;
     border-radius: 8px;
+    display: block;
   }
 
   .side-article .date {
