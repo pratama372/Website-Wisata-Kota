@@ -115,6 +115,41 @@ function autoScrollRight() {
 
 autoScrollRight();
 
+
+// === Tambahan: Dukungan swipe mobile ===
+let startTouchX = 0;
+
+slider.addEventListener('touchstart', (e) => {
+  isDragging = true;
+  isMoved = false;
+  startTouchX = e.touches[0].clientX;
+  scrollStart = slider.scrollLeft;
+  lastMoveX = e.touches[0].clientX;
+  velocity = 0;
+  cancelAnimationFrame(momentumID);
+});
+
+slider.addEventListener('touchmove', (e) => {
+  if (!isDragging) return;
+  const currentX = e.touches[0].clientX;
+  const walk = currentX - startTouchX;
+  velocity = currentX - lastMoveX;
+  lastMoveX = currentX;
+
+  if (Math.abs(walk) > 5) isMoved = true;
+
+  slider.scrollLeft = scrollStart - walk;
+
+  checkScrollLoop();
+});
+
+slider.addEventListener('touchend', () => {
+  if (!isDragging) return;
+  isDragging = false;
+  momentumScroll();
+});
+
+
 // Function(Galeri): Menambahakan event klik pada gambar untuk membuka modal jika tidak sedang di drag
 slider.querySelectorAll('img').forEach(img => {
   img.addEventListener('click', (e) => {
