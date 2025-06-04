@@ -315,6 +315,7 @@ nav a {
 
 /* tips travel */
   .travel-tips {
+    background-color: rgb(232, 232, 232);
     padding: 40px;
     text-align: center;
   }
