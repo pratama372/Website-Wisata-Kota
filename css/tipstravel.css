@@ -152,6 +152,60 @@ nav a:hover {
   text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
+.herogalungan {
+  height: 400px;
+  background: url('../assets/balipanas.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.heronyepi {
+  height: 400px;
+  background: url('../assets/nyepi.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.herobaliarts {
+  height: 400px;
+  background: url('../assets/pawaibaliarts.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.herobalifilmfest {
+  height: 400px;
+  background: url('../assets/balifilmfest3.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+
+
 /* TIPS SECTION */
 .tips-section {
   background: white;
