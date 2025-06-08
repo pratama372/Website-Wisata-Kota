@@ -65,3 +65,23 @@ nav a {
 nav a:hover {
     color: #3498db;
 }
+
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
