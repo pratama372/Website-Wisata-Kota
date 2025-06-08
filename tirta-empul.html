@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirta Empul | Pura Suci dan Mata Air Bali</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="wisata.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <a href="index.html" class="logo">BALIWonderful</a>
+    
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#destinations" class="nav-link">Destinations</a>
+        <a href="index.html#highlights">Highlights</a>
+        <a href="index.html#events-highlight">Festival & Tradisi Bali</a>
+        <a href="index.html#traveltips">Travel Tips</a>
+        <a href="#footer">Contact</a>
+      </nav>
+  </header>
+
+    <!-- Hero Section -->
+    <section class="profile-hero" id="home">
+        <!-- Background Image -->
+    <img src="WhatsApp Image 2025-06-02 at 15.57.25_51b88899.jpg" 
+         alt="Waterbom Bali Background" 
+         class="hero-background">
+    <div class="overlay"></div>
+        <div class="container">
+            <h1>AYO MENGUNJUNGI TIRTA EMPUL</h1>
+            <h2>Pengalaman spiritual di pura mata air suci Bali</h2>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section" id="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h2>Selamat Datang di Tirta Empul</h2>
+                    <p>
+                        Pura Tirta Empul adalah salah satu situs suci paling penting di Bali, terkenal dengan mata air sucinya 
+                        yang dipercaya memiliki kekuatan penyembuhan. Dibangun pada tahun 962 Masehi, pura ini menawarkan 
+                        pengalaman spiritual yang mendalam dengan ritual pembersihan tradisional di kolam sucinya. 
+                        Arsitektur khas Bali dan suasana religius yang kental menjadikan Tirta Empul sebagai destinasi 
+                        wajib bagi mereka yang ingin memahami budaya dan spiritualitas Bali yang sesungguhnya.
+                    </p>
+                </div>
+                <div class="welcome-images">
+                    <img src="https://images.unsplash.com/photo-1584697964358-3e16ca2a9a8b?w=800&h=600&fit=crop" alt="Pura Tirta Empul">
+                    <img src="https://images.unsplash.com/photo-1556740734-7f3a7d7d0a6a?w=800&h=600&fit=crop" alt="Ritual di Tirta Empul">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore-section" id="explore">
+        <div class="container">
+            <div class="explore-header">
+                <h2>Pengalaman di Tirta Empul</h2>
+                <p>
+                    Temukan berbagai pengalaman spiritual dan budaya yang ditawarkan oleh kompleks Pura Tirta Empul.
+                </p>
+            </div>
+            
+            <div class="destinations-grid">
+                <!-- Destination 1 -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1584697964358-3e16ca2a9a8b?w=800&h=600&fit=crop" alt="Kolam Penyucian">
+                    <div class="destination-info">
+                        <h3 class="destination-name">Kolam Penyucian</h3>
+                        <p class="destination-location">Tirta Empul, Bali</p>
+                        <p class="destination-preview">
+                            Ritual Melukat untuk pembersihan spiritual di mata air suci
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Destination 2 -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1556740734-7f3a7d7d0a6a?w=800&h=600&fit=crop" alt="Arsitektur Pura">
+                    <div class="destination-info">
+                        <h3 class="destination-name">Arsitektur Pura</h3>
+                        <p class="destination-location">Tirta Empul, Bali</p>
+                        <p class="destination-preview">
+                            Keindahan arsitektur tradisional Bali dengan ukiran rumit
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Destination 3 -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1566378246598-5b11a0b486eb?w=800&h=600&fit=crop" alt="Pemandangan Alam">
+                    <div class="destination-info">
+                        <h3 class="destination-name">Pemandangan Alam</h3>
+                        <p class="destination-location">Tirta Empul, Bali</p>
+                        <p class="destination-preview">
+                            Lingkungan alami yang asri dan menenangkan di sekitar pura
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+ <!-- FOOTER -->
+    <footer class="footer">
+      <section id="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>BALIWonderful</h3>
+            <div class="underline"></div>
+            <p>Destinasi liburan terbaik dengan pemandangan alam menakjubkan.</p>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+          </div>
+          <div class="footer-section">
+            <h3>Tautan Cepat</h3>
+            <div class="underline"></div>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="index.html#destinations">Lokasi</a></li>
+              <li><a href="index.html#traveltips">Tips</a></li>
+              <li><a href="index.html#gallery">Galeri</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Kontak</h3>
+            <div class="underline"></div>
+            <p>+623612345678</p>
+            <p>baliwonderful@gmail.com</p>
+            <p>Jl. Raya Wisata No.123</p>
+            <p>Gianyar, Bali</p>
+          </div>
+        </div>
+        <hr/>
+        <p class="copyright">© 2025 BALIWonderful. Semua Hak Dilindungi.</p>
+      </section>
+   </footer>
+
+    <script src="wisata.js"></script>
+</body>
+</html>

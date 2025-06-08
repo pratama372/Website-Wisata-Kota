@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawah Terasering Tegallalang | Keindahan Alam Bali yang Memukau</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="wisata.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <a href="index.html" class="logo">BALIWonderful</a>
+    
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#destinations" class="nav-link">Destinations</a>
+        <a href="index.html#highlights">Highlights</a>
+        <a href="index.html#events-highlight">Festival & Tradisi Bali</a>
+        <a href="index.html#traveltips">Travel Tips</a>
+        <a href="#footer">Contact</a>
+      </nav>
+  </header>
+    <!-- Hero Section -->
+    <section class="profile-hero" id="home">
+        <!-- Background Image -->
+    <img src="WhatsApp Image 2025-06-02 at 16.00.39_3c2a5cec.jpg" 
+         alt="Waterbom Bali Background" 
+         class="hero-background">
+    <div class="overlay"></div>
+        <div class="container">
+            <h1>SAWAH TERASERING TEGALLALANG</h1>
+            <h2>Keindahan alam bertingkat warisan budaya Subak Bali</h2>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section" id="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h2>Selamat Datang di Tegallalang</h2>
+                    <p>
+                        Sawah Terasering Tegallalang adalah salah satu lanskap pertanian paling ikonik di Bali yang telah diakui UNESCO sebagai bagian dari Warisan Budaya Dunia. Terletak sekitar 30 menit dari Ubud, hamparan sawah bertingkat ini menawarkan pemandangan spektakuler dengan sistem irigasi tradisional Subak yang telah berusia lebih dari seribu tahun. Selain keindahan alamnya yang memukau, Tegallalang juga menawarkan insight tentang kehidupan petani Bali dan kearifan lokal dalam mengelola sumber daya air.
+                    </p>
+                </div>
+                <div class="welcome-images">
+                    <img src="https://images.unsplash.com/photo-1566552881560-0be862a7c729?w=800&h=600&fit=crop" alt="Sawah Terasering Tegallalang">
+                    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop" alt="Pemandangan Sawah Tegallalang">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore-section" id="explore">
+        <div class="container">
+            <div class="explore-header">
+                <h2>Pengalaman di Tegallalang</h2>
+                <p>
+                    Temukan berbagai aktivitas menarik yang bisa Anda lakukan di kawasan sawah terasering ini
+                </p>
+            </div>
+            
+            <div class="destinations-grid">
+                <!-- Destination 1 -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800&h=600&fit=crop" alt="Jalan-jalan di Sawah">
+                    <div class="destination-info">
+                        <h3 class="destination-name">Trekking Sawah</h3>
+                        <p class="destination-location">Tegallalang, Bali</p>
+                        <p class="destination-preview">
+                            Jelajahi jalur setapak di antara sawah sambil menikmati pemandangan hijau
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Destination 2 -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1566552881560-0be862a7c729?w=800&h=600&fit=crop" alt="Spot Foto">
+                    <div class="destination-info">
+                        <h3 class="destination-name">Spot Foto Terbaik</h3>
+                        <p class="destination-location">Tegallalang, Bali</p>
+                        <p class="destination-preview">
+                            Berbagai sudut menakjubkan untuk mengabadikan momen
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Destination 3 -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop" alt="Warung Kopi">
+                    <div class="destination-info">
+                        <h3 class="destination-name">Warung Pemandangan</h3>
+                        <p class="destination-location">Tegallalang, Bali</p>
+                        <p class="destination-preview">
+                            Nikmati minuman segar sambil memandang hamparan sawah
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+   <!-- FOOTER -->
+    <footer class="footer">
+      <section id="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>BALIWonderful</h3>
+            <div class="underline"></div>
+            <p>Destinasi liburan terbaik dengan pemandangan alam menakjubkan.</p>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+          </div>
+          <div class="footer-section">
+            <h3>Tautan Cepat</h3>
+            <div class="underline"></div>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="index.html#destinations">Lokasi</a></li>
+              <li><a href="index.html#traveltips">Tips</a></li>
+              <li><a href="index.html#gallery">Galeri</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Kontak</h3>
+            <div class="underline"></div>
+            <p>+623612345678</p>
+            <p>baliwonderful@gmail.com</p>
+            <p>Jl. Raya Wisata No.123</p>
+            <p>Gianyar, Bali</p>
+          </div>
+        </div>
+        <hr/>
+        <p class="copyright">© 2025 BALIWonderful. Semua Hak Dilindungi.</p>
+      </section>
+   </footer>
+
+    <script src="wisata.js"></script>
+</body>
+</html>
