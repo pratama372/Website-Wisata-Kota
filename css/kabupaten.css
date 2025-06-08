@@ -1,1 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* ===== VARIABLES ===== */
+:root {
+    --primary: #2c3e50;
+    --primary-light: #3b536e;
+    --secondary: #f39c12;
+    --secondary-dark: #e67e22;
+    --light: #f8f9fa;
+    --dark: #2d3436;
+    --gray: #636e72;
+    --light-gray: #dfe6e9;
+    --white: #ffffff;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+    --border-radius-sm: 6px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 14px;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --section-spacing: 6rem;
+}
