@@ -85,3 +85,10 @@ nav {
   display: flex;
   gap: 20px;
 }
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
