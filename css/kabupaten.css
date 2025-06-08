@@ -344,3 +344,134 @@ nav {
     color: var(--gray);
     font-size: 0.95rem;
 }
+
+/* ===== GALLERY ===== */
+.gallery {
+    background-color: var(--light);
+    padding: var(--section-spacing) 0;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.gallery-item {
+    background: var(--white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.gallery-img {
+    height: 250px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .gallery-img img {
+    transform: scale(1.05);
+}
+
+.gallery-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary);
+}
+
+.gallery-desc {
+    color: var(--gray);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.gallery-link {
+    color: var(--secondary);
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.gallery-link:hover {
+    color: var(--secondary-dark);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .gallery-container {
+        gap: 1.5rem;
+    }
+    
+    .gallery-img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .gallery-item {
+        flex-direction: row;
+        max-height: 200px;
+    }
+    
+    .gallery-img {
+        width: 40%;
+        height: auto;
+    }
+    
+    .gallery-content {
+        width: 60%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-item {
+        flex-direction: column;
+        max-height: none;
+    }
+    
+    .gallery-img {
+        width: 100%;
+        height: 180px;
+    }
+    
+    .gallery-content {
+        width: 100%;
+    }
+}
