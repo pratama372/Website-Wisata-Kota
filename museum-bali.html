@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Bali | Pusat Warisan Budaya Pulau Dewata</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="wisata.css">
+</head>
+<body>
+    <!-- Header -->
+   <header>
+    <a href="index.html" class="logo">BALIWonderful</a>
+    
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#destinations" class="nav-link">Destinations</a>
+        <a href="index.html#highlights">Highlights</a>
+        <a href="index.html#events-highlight">Festival & Tradisi Bali</a>
+        <a href="index.html#traveltips">Travel Tips</a>
+        <a href="#footer">Contact</a>
+      </nav>
+  </header>
+
+    <!-- Hero Section -->
+    <section class="profile-hero" id="home">
+      <!-- Background Image -->
+    <img src="WhatsApp Image 2025-06-02 at 16.07.59_f5ce0a20.jpg" 
+         alt="Waterbom Bali Background" 
+         class="hero-background">
+    <div class="overlay"></div>
+        <div class="container">
+            <h1>MUSEUM BALI</h1>
+            <h2>Jendela Menuju Warisan Budaya Bali yang Kaya</h2>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section" id="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h2>Selamat Datang di Museum Bali</h2>
+                    <p>
+                        Museum Bali adalah museum utama di Pulau Dewata yang menyimpan kekayaan warisan budaya Bali sejak zaman prasejarah hingga modern. Terletak di jantung Denpasar, museum ini menempati kompleks bangunan bergaya arsitektur tradisional Bali. Dibangun tahun 1910 oleh pemerintahan kolonial Belanda, museum ini menawarkan perjalanan menyeluruh melalui sejarah, seni, dan budaya Bali melalui koleksi lebih dari 10.000 artefak.
+                    </p>
+                </div>
+                <div class="welcome-images">
+                    <img src="https://images.unsplash.com/photo-1589800428788-81f2d51e1e1b?w=800&h=600&fit=crop" alt="Bangunan Museum Bali">
+                    <img src="https://images.unsplash.com/photo-1589800428788-81f2d51e1e1b?w=800&h=600&fit=crop" alt="Artefak Museum">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore-section" id="explore">
+  <div class="container">
+    <div class="explore-header">
+      <h2>Museum Bali</h2>
+      <p>
+        Temukan kekayaan budaya dan sejarah Bali di jantung Kota Denpasar, tepat di sekitar Lapangan Puputan Badung.
+      </p>
+    </div>
+
+    <div class="destinations-grid">
+      <!-- Destination 1: Museum Bali -->
+      <div class="destination-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Museum_Bali_-_Denpasar.jpg" alt="Museum Bali">
+        <div class="destination-info">
+          <h3 class="destination-name">Museum Bali</h3>
+          <p class="destination-location">Denpasar, Bali</p>
+          <p class="destination-preview">
+            Menyimpan koleksi seni, budaya, dan sejarah Bali dari zaman prasejarah hingga masa kini, dengan arsitektur tradisional Bali.
+          </p>
+        </div>
+      </div>
+
+      <!-- Destination 2: Candi Bentar Museum -->
+      <div class="destination-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Candi_Bentar_at_Bali_Museum.jpg" alt="Candi Bentar Museum Bali">
+        <div class="destination-info">
+          <h3 class="destination-name">Candi Bentar</h3>
+          <p class="destination-location">Pintu Gerbang Museum Bali</p>
+          <p class="destination-preview">
+            Gerbang tradisional khas Bali yang menjadi pintu masuk utama ke kompleks Museum Bali, cocok untuk latar foto bersejarah.
+          </p>
+        </div>
+      </div>
+
+      <!-- Destination 3: Lapangan Puputan -->
+      <div class="destination-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Lapangan_Puputan_Badung_Denpasar.jpg" alt="Lapangan Puputan Badung">
+        <div class="destination-info">
+          <h3 class="destination-name">Lapangan Puputan Badung</h3>
+          <p class="destination-location">Tepat di depan Museum Bali</p>
+          <p class="destination-preview">
+            Ruang publik bersejarah tempat peringatan perjuangan rakyat Bali. Dikelilingi taman hijau dan monumen perjuangan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   
+    <!-- Footer -->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <section id="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>BALIWonderful</h3>
+            <div class="underline"></div>
+            <p>Destinasi liburan terbaik dengan pemandangan alam menakjubkan.</p>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+          </div>
+          <div class="footer-section">
+            <h3>Tautan Cepat</h3>
+            <div class="underline"></div>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="index.html#destinations">Lokasi</a></li>
+              <li><a href="index.html#traveltips">Tips</a></li>
+              <li><a href="index.html#gallery">Galeri</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Kontak</h3>
+            <div class="underline"></div>
+            <p>+623612345678</p>
+            <p>baliwonderful@gmail.com</p>
+            <p>Jl. Raya Wisata No.123</p>
+            <p>Gianyar, Bali</p>
+          </div>
+        </div>
+        <hr/>
+        <p class="copyright">© 2025 BALIWonderful. Semua Hak Dilindungi.</p>
+      </section>
+   </footer>
+
+    <script src="wisata.js"></script>
+</body>
+</html>
