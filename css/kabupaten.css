@@ -475,3 +475,22 @@ nav {
         width: 100%;
     }
 }
+
+/* ===== MAP ===== */
+.map-section {
+    background-color: var(--white);
+}
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--light-gray);
+}
+
+.map-container {
+    height: 500px;
+    width: 100%;
+}
