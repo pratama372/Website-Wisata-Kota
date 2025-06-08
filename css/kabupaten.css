@@ -26,14 +26,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--dark);
-    line-height: 1.7;
-    background-color: var(--light);
+html, body {
+    max-width: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    color: #333;
+
 }
 
 h1, h2, h3, h4 {
