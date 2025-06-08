@@ -7,7 +7,7 @@ BALIWonderful adalah website informasi tempat wisata di Bali yang menyajikan des
 | Nama                            | NIM        | Username Github    |  Peran/Tugas                                        |
 |---------------------------------|------------|--------------------|-----------------------------------------------------|
 | Dewa Gede Pratama Yasa Putra    | 240010047  | @pratama327        | 
-| Naufal Wiartawan Abdi Swastikaa | 240010048  | @Naufall0000       |  Membuat homepage (HTML, CSS responsif, JavaScript) |
+| Naufal Wiartawan Abdi Swastika  | 240010048  | @Naufall0000       |  Membuat homepage (HTML, CSS responsif, JavaScript) |
 | Made Shoma Nathawhimbardhi      | 240010097  | @Shoma097          |                                                     
 | Albertus Surya Darmawan Susilo  | 240010040  | @bobythebaby       |
 
