@@ -580,3 +580,189 @@ hr {
     font-size: 14px;
     color: black;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .welcome-content {
+        gap: 50px;
+    }
+    
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header Mobile Styles */
+    header {
+        padding: 16px 20px;
+    }
+    
+    nav {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.98);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 15px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+    }
+    
+    nav.show {
+        transform: translateY(0);
+    }
+    
+    nav a {
+        margin: 5px 0;
+        padding: 10px 0;
+        font-size: 1.1rem;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    /* Hero Section Mobile */
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    /* Welcome Section Mobile */
+    .welcome-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .welcome-images {
+        height: 300px;
+        order: -1;
+    }
+    
+    .welcome-text h2 {
+        font-size: 2.8rem;
+    }
+    
+    /* Explore Section Mobile */
+    .explore-header h2 {
+        font-size: 2.8rem;
+    }
+    
+    /* Footer Mobile */
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .hero-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* Destinations Grid */
+    .destinations-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    /* Welcome Images */
+    .welcome-images {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    
+    .welcome-images img {
+        height: 200px;
+    }
+    
+    /* Section Headers */
+    .welcome-text h2,
+    .explore-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    /* Section Paddings */
+    .welcome-section,
+    .explore-section {
+        padding: 60px 0;
+    }
+    
+    /* Destination Card */
+    .destination-info {
+        padding: 20px;
+    }
+    
+    .destination-name {
+        font-size: 1.3rem;
+    }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero-section {
+        min-height: 400px;
+    }
+    
+    .hero-nav {
+        bottom: 20px;
+    }
+    
+    .hero-dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  nav.show {
+    display: flex;
+    }
+
+  nav a {
+    margin: 15px 0;
+ }}
