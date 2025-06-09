@@ -77,4 +77,10 @@ const markers = [
         coords: [-8.382600, 114.649300], // Sangkaragung
         title: "Sangkaragung",
         desc: "Desa nelayan tradisional dengan pantai berpasir hitam yang indah"
-    },];
+    },
+    {
+        coords: [-8.385947, 114.715961], // Pura Rambut Siwi
+        title: "Pura Rambut Siwi",
+        desc: "Pura penting di Bali yang terletak di tebing menghadap laut"
+    }, 
+];
