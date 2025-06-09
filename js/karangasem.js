@@ -95,3 +95,9 @@ markers.forEach(marker => {
 // Mengatur padding map agar semua icon terlihat
 const markerGroup = new L.featureGroup(markers.map(m => L.marker(m.coords)));
 map.fitBounds(markerGroup.getBounds().pad(0.5));
+
+// Menambahkan toggle menu mobile
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('show');
+}
