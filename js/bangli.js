@@ -77,4 +77,10 @@ const markers = [
         coords: [-8.44, 115.387], // Air Terjun Tukad Cepung
         title: "Air Terjun Tukad Cepung",
         desc: "Air terjun tersembunyi yang menakjubkan di dalam gua dengan efek cahaya magis"
-    }, ]
+    }, 
+    {
+        coords: [-8.239, 115.322028], // Kintamani
+        title: "Kintamani",
+        desc: "Kawasan dengan pemandangan Gunung Batur dan Danau Batur yang spektakuler"
+    }
+];
