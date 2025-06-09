@@ -31,3 +31,8 @@ function showSlide(index) {
         slide.classList.toggle('active', i === index);
     });
 }
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % heroSlides.length;
+    showSlide(currentSlide);
+}
