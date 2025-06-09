@@ -67,4 +67,9 @@ const markers = [
         coords: [-8.418808, 114.805054], // Pantai Medewi
         title: "Pantai Medewi",
         desc: "Pantai dengan ombak panjang yang populer di kalangan peselancar"
-    }, ],
+    }, 
+    {
+        coords: [-8.340500, 114.568000], // Taman Nasional Bali Barat
+        title: "Taman Nasional Bali Barat",
+        desc: "Kawasan konservasi alam yang melindungi flora dan fauna endemik Bali"
+    },];
