@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Smooth scrolling for navigation
+// Menambahkan smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -21,3 +21,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Hero image slider
+const heroSlides = document.querySelectorAll('.hero-slide');
+let currentSlide = 0;
+
+function showSlide(index) {
+    heroSlides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+    });
+}
