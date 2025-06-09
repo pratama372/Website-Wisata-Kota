@@ -84,3 +84,10 @@ const markers = [
         desc: "Air terjun tertinggi di Bali dengan ketinggian sekitar 80 meter, dikelilingi hutan tropis"
     }
 ];
+
+// Menambahkan marker pada map
+markers.forEach(marker => {
+    L.marker(marker.coords, { icon: customIcon }).addTo(map)
+        .bindPopup(`<b>${marker.title}</b><br><small>${marker.desc}</small>`)
+        .openPopup();
+});
