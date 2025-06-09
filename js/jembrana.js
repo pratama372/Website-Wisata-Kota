@@ -72,4 +72,9 @@ const markers = [
         coords: [-8.340500, 114.568000], // Taman Nasional Bali Barat
         title: "Taman Nasional Bali Barat",
         desc: "Kawasan konservasi alam yang melindungi flora dan fauna endemik Bali"
+    },
+    {
+        coords: [-8.382600, 114.649300], // Sangkaragung
+        title: "Sangkaragung",
+        desc: "Desa nelayan tradisional dengan pantai berpasir hitam yang indah"
     },];
