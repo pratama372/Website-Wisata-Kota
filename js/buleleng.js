@@ -72,4 +72,9 @@ const markers = [
         coords: [-8.24490, 115.12300], // Danau Buyan
         title: "Danau Buyan",
         desc: "Danau vulkanik yang dikelilingi hutan hijau subur dengan udara sejuk"
+    },
+    {
+        coords: [-8.14927, 115.03999], // Pantai Lovina
+        title: "Pantai Lovina",
+        desc: "Pantai dengan pasir hitam yang tenang, terkenal dengan atraksi lumba-lumba di pagi hari"
     }, ]
