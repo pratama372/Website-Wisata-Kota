@@ -67,4 +67,9 @@ const markers = [
         coords: [-8.09876, 114.51448], // Pulau Menjangan
         title: "Pulau Menjangan",
         desc: "Pulau kecil di Taman Nasional Bali Barat dengan terumbu karang spektakuler dan biota laut yang kaya"
+    },
+    {
+        coords: [-8.24490, 115.12300], // Danau Buyan
+        title: "Danau Buyan",
+        desc: "Danau vulkanik yang dikelilingi hutan hijau subur dengan udara sejuk"
     }, ]
