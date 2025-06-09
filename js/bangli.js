@@ -39,3 +39,11 @@ function nextSlide() {
 
 // Menambahkan slide change
 setInterval(nextSlide, 5000);
+
+// Menambahkan scroll map zoom tanpa zoom control
+const map = L.map('mapid', {
+    center: [-8.35, 115.38], // Centered around Bangli attractions
+    zoom: 11,
+    scrollWheelZoom: true,
+    zoomControl: false
+});
