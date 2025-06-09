@@ -84,3 +84,10 @@ const markers = [
         desc: "Pura penting di Bali yang terletak di tebing menghadap laut"
     }, 
 ];
+
+// Menambahkan markers ke map
+markers.forEach(marker => {
+    L.marker(marker.coords, { icon: customIcon }).addTo(map)
+        .bindPopup(`<b>${marker.title}</b><br><small>${marker.desc}</small>`)
+        .openPopup();
+});
