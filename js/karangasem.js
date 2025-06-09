@@ -21,3 +21,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Hero image slider
+const heroSlides = document.querySelectorAll('.hero-slide');
+let currentSlide = 0;
