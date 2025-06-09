@@ -67,4 +67,9 @@ const markers = [
         coords: [-8.4555, 115.3636], // Desa Penglipuran (corrected)
         title: "Desa Penglipuran",
         desc: "Desa tradisional Bali yang terpelihara dengan sempurna, terkenal dengan tata letak yang rapi"
+    },
+    {
+        coords: [-8.25833, 115.40833], // Danau Batur
+        title: "Danau Batur",
+        desc: "Danau vulkanik terbesar di Bali yang terletak di kaldera Gunung Batur"
     }, ]
