@@ -60,3 +60,11 @@ const customIcon = L.icon({
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]
 });
+
+// Menambahkan marker untuk objek wisata
+const markers = [
+    {
+        coords: [-8.09876, 114.51448], // Pulau Menjangan
+        title: "Pulau Menjangan",
+        desc: "Pulau kecil di Taman Nasional Bali Barat dengan terumbu karang spektakuler dan biota laut yang kaya"
+    }, ]
