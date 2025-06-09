@@ -91,3 +91,7 @@ markers.forEach(marker => {
         .bindPopup(`<b>${marker.title}</b><br><small>${marker.desc}</small>`)
         .openPopup();
 });
+
+// Mengatur padding map agar semua icon terlihat
+const markerGroup = new L.featureGroup(markers.map(m => L.marker(m.coords)));
+map.fitBounds(markerGroup.getBounds().pad(0.5));
