@@ -60,3 +60,11 @@ const customIcon = L.icon({
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]
 });
+
+// Menambahkan marker koordinat untuk objek wisata
+const markers = [
+    {
+        coords: [-8.418808, 114.805054], // Pantai Medewi
+        title: "Pantai Medewi",
+        desc: "Pantai dengan ombak panjang yang populer di kalangan peselancar"
+    }, ],
