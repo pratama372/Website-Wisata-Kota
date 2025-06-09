@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wisata Badung - Pesona Bali Selatan</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/kabupaten.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/kabupaten.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <a href="index.html" class="logo">BALIWonderful</a>
 
-     <!-- ===== HEADER ===== -->
-   <header>
-    <a href="index.html" class="logo">BALIWonderful</a>
-    
       <div class="hamburger" onclick="toggleMenu()">
         <div></div>
         <div></div>
@@ -28,99 +36,138 @@
         <a href="index.html#traveltips">Travel Tips</a>
         <a href="#footer">Contact</a>
       </nav>
-  </header>
+    </header>
 
-   <!-- ===== HERO ===== -->
+    <!-- ===== HERO ===== -->
     <section id="home" class="hero">
-        <div class="hero-slides">
-            <div class="hero-slide active" style="background-image: url('WhatsApp Image 2025-06-02 at 16.19.10_e007ef94.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('WhatsApp Image 2025-06-02 at 16.17.56_32349d21.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('WhatsApp Image 2025-06-02 at 16.16.21_d490e0e2.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('WhatsApp Image 2025-06-02 at 16.11.54_72c49c55.jpg')"></div>
+      <div class="hero-slides">
+        <div
+          class="hero-slide active"
+          style="
+            background-image: url('WhatsApp Image 2025-06-02 at 16.19.10_e007ef94.jpg');
+          "
+        ></div>
+        <div
+          class="hero-slide"
+          style="
+            background-image: url('WhatsApp Image 2025-06-02 at 16.17.56_32349d21.jpg');
+          "
+        ></div>
+        <div
+          class="hero-slide"
+          style="
+            background-image: url('WhatsApp Image 2025-06-02 at 16.16.21_d490e0e2.jpg');
+          "
+        ></div>
+        <div
+          class="hero-slide"
+          style="
+            background-image: url('WhatsApp Image 2025-06-02 at 16.11.54_72c49c55.jpg');
+          "
+        ></div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">Kabupaten Badung: Pesona Bali Selatan</h1>
+        <p class="hero-text">
+          Temukan keindahan pantai eksotis, budaya hidup, dan hiburan kelas
+          dunia
+        </p>
+        <div class="hero-buttons">
+          <a href="#gallery" class="btn">Jelajahi Badung</a>
         </div>
-        
-        <div class="hero-content">
-            <h1 class="hero-title">Kabupaten Badung: Pesona Bali Selatan</h1>
-            <p class="hero-text">Temukan keindahan pantai eksotis, budaya hidup, dan hiburan kelas dunia</p>
-            <div class="hero-buttons">
-                <a href="#gallery" class="btn">Jelajahi Badung</a>
-            </div>
-        </div>
+      </div>
     </section>
 
-     <!-- ===== ABOUT ===== -->
+    <!-- ===== ABOUT ===== -->
     <section id="about" class="section about">
-        <div class="container">
-            <h2 class="section-title">Tentang Kabupaten Badung</h2>
-            <p class="about-text">
-                Kabupaten Badung merupakan jantung pariwisata Bali dengan destinasi dunia seperti Kuta, Seminyak, 
-                Nusa Dua, dan Uluwatu. Daerah ini menawarkan kombinasi sempurna antara pantai-pantai indah, 
-                resor mewah, budaya Bali yang autentik, dan kehidupan malam yang dinamis. Badung juga menjadi 
-                tempat berlangsungnya berbagai event internasional dan pusat kuliner dengan restoran kelas dunia 
-                maupun warung tradisional yang menggoda selera.
-            </p>
-        </div>
+      <div class="container">
+        <h2 class="section-title">Tentang Kabupaten Badung</h2>
+        <p class="about-text">
+          Kabupaten Badung merupakan jantung pariwisata Bali dengan destinasi
+          dunia seperti Kuta, Seminyak, Nusa Dua, dan Uluwatu. Daerah ini
+          menawarkan kombinasi sempurna antara pantai-pantai indah, resor mewah,
+          budaya Bali yang autentik, dan kehidupan malam yang dinamis. Badung
+          juga menjadi tempat berlangsungnya berbagai event internasional dan
+          pusat kuliner dengan restoran kelas dunia maupun warung tradisional
+          yang menggoda selera.
+        </p>
+      </div>
     </section>
 
     <!-- ===== GALLERY ===== -->
     <section id="gallery" class="section gallery">
-        <div class="container">
-            <h2 class="section-title">Destinasi Wisata Badung</h2>
-            <div class="gallery-container">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img src="WhatsApp Image 2025-06-02 at 16.19.10_e007ef94.jpg" alt="Pantai Kuta">
-                    </div>
-                    <div class="gallery-content">
-                        <h3 class="gallery-title">Pantai Kuta</h3>
-                        <p class="gallery-desc">Pantai legendaris dengan ombak yang cocok untuk berselancar, sunset menakjubkan, dan kehidupan malam yang semarak.</p>
-                        <a href="#" class="gallery-link">Lihat Detail →</a>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img src="WhatsApp Image 2025-06-02 at 16.17.56_32349d21.jpg" alt="Pura Uluwatu">
-                    </div>
-                    <div class="gallery-content">
-                        <h3 class="gallery-title">Pura Uluwatu</h3>
-                        <p class="gallery-desc">Pura laut megah di tebing tinggi dengan pemandangan Samudera Hindia dan pertunjukan Kecak saat matahari terbenam.</p>
-                        <a href="#" class="gallery-link">Lihat Detail →</a>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img src="WhatsApp Image 2025-06-02 at 16.16.21_d490e0e2.jpg" alt="Waterbom Bali">
-                    </div>
-                    <div class="gallery-content">
-                        <h3 class="gallery-title">Waterbom Bali</h3>
-                        <p class="gallery-desc">Taman air terbaik di Asia dengan berbagai wahana seru, area relaksasi, dan fasilitas kelas dunia di jantung Kuta.</p>
-                        <a href="#" class="gallery-link">Lihat Detail →</a>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img src="WhatsApp Image 2025-06-02 at 16.11.54_72c49c55.jpg" alt="Pantai Nusa Dua">
-                    </div>
-                    <div class="gallery-content">
-                        <h3 class="gallery-title">Pantai Nusa Dua</h3>
-                        <p class="gallery-desc">Pantai berpasir putih dengan ombak tenang, dikelilingi resor mewah dan fasilitas wisata eksklusif.</p>
-                        <a href="package_2.html" class="gallery-link">Lihat Detail →</a>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Destinasi Wisata Badung</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="gallery-img">
+              <img src="assets/pantai-kuta,1.jpg" alt="Pantai Kuta" />
             </div>
+            <div class="gallery-content">
+              <h3 class="gallery-title">Pantai Kuta</h3>
+              <p class="gallery-desc">
+                Pantai legendaris dengan ombak yang cocok untuk berselancar,
+                sunset menakjubkan, dan kehidupan malam yang semarak.
+              </p>
+              <a href="#" class="gallery-link">Lihat Detail →</a>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">
+              <img src="assets/PuraUluwatu.jpg" alt="Pura Uluwatu" />
+            </div>
+            <div class="gallery-content">
+              <h3 class="gallery-title">Pura Uluwatu</h3>
+              <p class="gallery-desc">
+                Pura laut megah di tebing tinggi dengan pemandangan Samudera
+                Hindia dan pertunjukan Kecak saat matahari terbenam.
+              </p>
+              <a href="#" class="gallery-link">Lihat Detail →</a>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">
+              <img src="assets/waterbom.jpg" alt="Waterbom Bali" />
+            </div>
+            <div class="gallery-content">
+              <h3 class="gallery-title">Waterbom Bali</h3>
+              <p class="gallery-desc">
+                Taman air terbaik di Asia dengan berbagai wahana seru, area
+                relaksasi, dan fasilitas kelas dunia di jantung Kuta.
+              </p>
+              <a href="#" class="gallery-link">Lihat Detail →</a>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">
+              <img
+                src="assets/pantai-nusadua,1.jpg"
+                alt="Pantai Nusa Dua"
+              />
+            </div>
+            <div class="gallery-content">
+              <h3 class="gallery-title">Pantai Nusa Dua</h3>
+              <p class="gallery-desc">
+                Pantai berpasir putih dengan ombak tenang, dikelilingi resor
+                mewah dan fasilitas wisata eksklusif.
+              </p>
+              <a href="package_2.html" class="gallery-link">Lihat Detail →</a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-     <!-- ===== MAP ===== -->
+    <!-- ===== MAP ===== -->
     <section id="map" class="section map-section">
-        <div class="container">
-            <h2 class="section-title">Peta Wisata Badung</h2>
-            <div class="map-wrapper">
-                <div class="map-container" id="mapid"></div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Peta Wisata Badung</h2>
+        <div class="map-wrapper">
+          <div class="map-container" id="mapid"></div>
         </div>
+      </div>
     </section>
-    
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -129,14 +176,15 @@
           <div class="footer-section">
             <h3>BALIWonderful</h3>
             <div class="underline"></div>
-            <p>Destinasi liburan terbaik dengan pemandangan alam menakjubkan.</p>
+            <p>
+              Destinasi liburan terbaik dengan pemandangan alam menakjubkan.
+            </p>
             <div class="social-icons">
               <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
               <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
               <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
               <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
-
           </div>
           <div class="footer-section">
             <h3>Tautan Cepat</h3>
@@ -157,15 +205,14 @@
             <p>Gianyar, Bali</p>
           </div>
         </div>
-        <hr/>
+        <hr />
         <p class="copyright">© 2025 BALIWonderful. Semua Hak Dilindungi.</p>
       </section>
-   </footer>
+    </footer>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="nav-toggle.js"></script> 
+    <script src="nav-toggle.js"></script>
     <script src="kabupaten.js"></script>
     <script src="js/badung.js"></script>
-
-</body>
+  </body>
 </html>
