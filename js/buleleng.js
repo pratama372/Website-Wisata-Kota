@@ -39,3 +39,11 @@ function nextSlide() {
 
 // Menambahkan change slide
 setInterval(nextSlide, 5000);
+
+// Menambahkan scroll map zoom tanpa zoom control
+const map = L.map('mapid', {
+    center: [-8.18, 115.10], // Adjusted center point for better view of all locations
+    zoom: 10,
+    scrollWheelZoom: true,
+    zoomControl: false
+});
