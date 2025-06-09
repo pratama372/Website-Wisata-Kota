@@ -82,4 +82,12 @@ const markers = [
         coords: [-8.3916251, 115.6312085], // Pura Lempuyang
         title: "Pura Lempuyang",
         desc: "Salah satu pura paling suci di Bali dengan 'Pintu Surga' yang ikonik"
-    }];
+    }
+];
+
+// Menambahkan marker ke map dengan icon custom
+markers.forEach(marker => {
+    L.marker(marker.coords, { icon: customIcon }).addTo(map)
+        .bindPopup(`<b>${marker.title}</b><br><small>${marker.desc}</small>`)
+        .openPopup();
+});
