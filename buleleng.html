@@ -4,8 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wisata Buleleng - Destinasi Liburan Terbaik</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kabupaten.css">
 </head>
 <body>
+    <!-- Menambagkan HEADER -->
+    <header>
+        <a href="index.html" class="logo">BALIWonderful</a>
+        
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#destinations" class="nav-link">Destinations</a>
+            <a href="index.html#highlights">Highlights</a>
+            <a href="index.html#traveltips">Travel Tips</a>
+        </nav>
+    </header>
+
+    <!-- ===== Menambahkan HERO ===== -->
+    <section id="home" class="hero">
+        <div class="hero-slides">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Temukan Pesona Alam & Budaya di Buleleng</h1>
+            <p class="hero-text">Jelajahi keindahan alam dan budaya khas Bali Utara di Kabupaten Buleleng</p>
+            <div class="hero-buttons">
+                <a href="#gallery" class="btn">Lihat Galeri</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Menambahkan ABOUT ===== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">Tentang Buleleng</h2>
+            <p class="about-text">
+                Kabupaten Buleleng terletak di bagian utara Pulau Bali dengan keindahan alam yang masih alami.
+                Dikenal dengan julukan "Bali Utara", Buleleng menawarkan pantai-pantai eksotis, danau yang mempesona,
+                serta pulau kecil yang menjadi surga bagi penyelam. Nikmati pesona Bali yang berbeda dari kawasan selatan.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== Menambahkan GALLERY ===== -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <h2 class="section-title">Destinasi Wisata Buleleng</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pulau Menjangan">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Pulau Menjangan</h3>
+                        <p class="gallery-desc">Pulau kecil di Taman Nasional Bali Barat dengan terumbu karang spektakuler dan biota laut yang kaya, surga bagi penyelam.</p>
+                        <a href="#" class="gallery-link">Lihat Detail →</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Danau Buyan">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Danau Buyan</h3>
+                        <p class="gallery-desc">Danau vulkanik yang dikelilingi hutan hijau subur dengan udara sejuk dan pemandangan memukau.</p>
+                        <a href="#" class="gallery-link">Lihat Detail →</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pantai Lovina">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Pantai Lovina</h3>
+                        <p class="gallery-desc">Pantai dengan pasir hitam yang tenang, terkenal dengan atraksi lumba-lumba di pagi hari.</p>
+                        <a href="#" class="gallery-link">Lihat Detail →</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Air Terjun Sekumpul">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Air Terjun Sekumpul</h3>
+                        <p class="gallery-desc">Air terjun tertinggi di Bali dengan ketinggian sekitar 80 meter, dikelilingi oleh hutan tropis yang hijau.</p>
+                        <a href="#" class="gallery-link">Lihat Detail →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Menambahkan MAP ===== -->
+    <section id="map" class="section map-section">
+        <div class="container">
+            <h2 class="section-title">Lokasi Wisata Buleleng</h2>
+            <div class="map-wrapper">
+                <div class="map-container" id="mapid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Menambahkan FOOTER ===== -->
+   <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>BALIWonderful</h3>
+      <div class="underline"></div>
+      <p>Menjelajahi keindahan Bali Utara dengan pesona alam yang masih alami dan budaya yang autentik.</p>
+      <div class="social-icons">
+        <a>📱</i></a>
+        <a >📸</i></a>
+        <a >🐦</i></a>
+        <a >📘</i></a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h3>Tautan Cepat</h3>
+      <div class="underline"></div>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Galeri</a></li>
+        <li><a href="#">Lokasi</a></li>
+        
+      </ul>
+    </div>
     
+    <div class="footer-section">
+      <h3>Kontak</h3>
+      <div class="underline"></div>
+      <p>+623612345678</p>
+      <p>baliwonderful@gmail.com</p>
+      <p>Jl. Raya Singaraja No.123</p>
+      <p>Buleleng, Bali</p>
+    </div>
+  </div>
+  <hr />
+  <p class="copyright">© 2023 Wisata Buleleng. Semua Hak Dilindungi.</p>
+</footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="nav-toggle.js"></script> 
+    <script src="kabupaten.js"></script>
 </body>
 </html>
