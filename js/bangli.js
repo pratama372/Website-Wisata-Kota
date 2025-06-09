@@ -61,3 +61,10 @@ const customIcon = L.icon({
     popupAnchor: [0, -32]
 });
 
+// Menambahkan koordinat tempat wisata
+const markers = [
+    {
+        coords: [-8.4555, 115.3636], // Desa Penglipuran (corrected)
+        title: "Desa Penglipuran",
+        desc: "Desa tradisional Bali yang terpelihara dengan sempurna, terkenal dengan tata letak yang rapi"
+    }, ]
