@@ -84,3 +84,10 @@ const markers = [
         desc: "Kawasan dengan pemandangan Gunung Batur dan Danau Batur yang spektakuler"
     }
 ];
+
+// Menambahkan marker
+markers.forEach(marker => {
+    L.marker(marker.coords, { icon: customIcon }).addTo(map)
+        .bindPopup(`<b>${marker.title}</b><br><small>${marker.desc}</small>`)
+        .openPopup();
+});
