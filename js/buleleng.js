@@ -82,4 +82,5 @@ const markers = [
         coords: [-8.17760, 115.18255], // Air Terjun Sekumpul
         title: "Air Terjun Sekumpul",
         desc: "Air terjun tertinggi di Bali dengan ketinggian sekitar 80 meter, dikelilingi hutan tropis"
-    }]
+    }
+];
