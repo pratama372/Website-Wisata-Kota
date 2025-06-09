@@ -77,4 +77,9 @@ const markers = [
         coords: [-8.14927, 115.03999], // Pantai Lovina
         title: "Pantai Lovina",
         desc: "Pantai dengan pasir hitam yang tenang, terkenal dengan atraksi lumba-lumba di pagi hari"
-    }, ]
+    }, 
+    {
+        coords: [-8.17760, 115.18255], // Air Terjun Sekumpul
+        title: "Air Terjun Sekumpul",
+        desc: "Air terjun tertinggi di Bali dengan ketinggian sekitar 80 meter, dikelilingi hutan tropis"
+    }]
