@@ -36,3 +36,6 @@ function nextSlide() {
     currentSlide = (currentSlide + 1) % heroSlides.length;
     showSlide(currentSlide);
 }
+
+// Menambahkan perubahan slide
+setInterval(nextSlide, 5000);
