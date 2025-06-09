@@ -20,13 +20,14 @@ BALIWonderful adalah website informasi tempat wisata di Bali yang menyajikan des
 - **GitHub Pages** (untuk deployment)
 
 ## Fitur Utama
-- Halaman utama dengan kartu destinations yang berisi kabupaten di Bali.
-- Bagian Destination Highlights yang berisi penjelasan singkat dan video.
-- Kartu Festival & Tradisi Bali (Galungan & Kuningan, Nyepi & Pengerupukan, Bali Arts Festival, Bali International Film Festival)
-- Kartu tips perjalanan (travel tips, Tips Liburan Musim Panas di Bali, Tips Liburan Saat Musim Hujan   di Bali, Merencanakan Perjalanan di Awal).
-- Travel Gallery yang otomatis scroll sendiri dan saat di klik gambar bisa terbuka.
-- Layout responsif yang dapat diakses di berbagai perangkat.
 - Navigasi cepat dan ringan.
+- Hero pada bagian halaman utama dengan background gambar dengan fitur transisi otomatis
+- Halaman utama dengan kartu destinations yang berisi kabupaten-kabupaten di Bali.
+- Bagian Destination Highlights yang berisi penjelasan singkat mengenai bali dan video yang bersumber dari Youtube.
+- Kartu Festival & Tradisi Bali yang berisi Galungan & Kuningan, Nyepi & Pengerupukan, Bali Arts Festival, Bali International Film Festival. Saat kartu di klik maka beralih ke halaman lain yang berisi penjelasan
+- Kartu tips perjalanan Travel Tips, Tips Liburan Musim Panas di Bali, Tips Liburan Saat Musim Hujan   di Bali, Merencanakan Perjalanan di Awal. Saat kartu di klik maka beralih ke halaman lain yang berisi penjelasan
+- Travel Gallery yang memiliki fitur scroll otomatis, saat mouse berada pada bagian gambar maka scroll akan terhenti, dan saat gambar di klik maka gambar bisa muncul.
+- Layout responsif yang dapat diakses di berbagai perangkat.
 - Footer dengan informasi kontak dan sosial media.
 
 ## Struktur Folder
