@@ -8,8 +8,8 @@ BALIWonderful adalah website informasi tempat wisata di Bali yang menyajikan des
 |---------------------------------|------------|--------------------|-----------------------------------------------------|
 | Dewa Gede Pratama Yasa Putra    | 240010047  | @pratama327        |  Membuat halaman denpasar, gianyar, badung dan isinya (HTML, CSS responsif, JavaScript) |
 | Naufal Wiartawan Abdi Swastika  | 240010048  | @Naufall0000       |  Membuat halaman homepage, Festival & Tradisi Bali, Travel Tips (HTML, CSS responsif, JavaScript) |
-| Made Shoma Nathawhimbardhi      | 240010097  | @Shoma097          |  Membuat halaman bangli, buleleng, jembrana, karangasem (HTML, JavaScript)  |                                   
-| Albertus Surya Darmawan Susilo  | 240010040  | @bobythebaby       |  Membuat halaman klungkung, tabanan & mencari gambar untuk kabupaten dan wisata  |
+| Made Shoma Nathawhimbardhi      | 240010097  | @Shoma097          |  Membuat halaman bangli, buleleng, karangasem (HTML, JavaScript)  |                                   
+| Albertus Surya Darmawan Susilo  | 240010040  | @bobythebaby       |  Membuat halaman jembrana, klungkung, tabanan (HTML, JavaScript) & mencari gambar untuk kabupaten dan wisata  |
 
 # Teknologi yang Digunakan
 - **HTML5**
