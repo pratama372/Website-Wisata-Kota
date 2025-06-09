@@ -37,13 +37,18 @@ function nextSlide() {
     showSlide(currentSlide);
 }
 
-// Change slide every 5 seconds
+// Menambahkan mengubah slide
 setInterval(nextSlide, 5000);
 
 // Menambahkan scroll map zoom tanpa zoom control
 const map = L.map('mapid', {
-    center: [-8.38, 114.68], // Centered around Jembrana attractions
+    center: [-8.38, 114.68], 
     zoom: 11,
     scrollWheelZoom: true,
     zoomControl: false
 });
+
+// Menambahkan tile layer
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
