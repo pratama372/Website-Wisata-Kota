@@ -72,4 +72,9 @@ const markers = [
         coords: [-8.25833, 115.40833], // Danau Batur
         title: "Danau Batur",
         desc: "Danau vulkanik terbesar di Bali yang terletak di kaldera Gunung Batur"
+    },
+    {
+        coords: [-8.44, 115.387], // Air Terjun Tukad Cepung
+        title: "Air Terjun Tukad Cepung",
+        desc: "Air terjun tersembunyi yang menakjubkan di dalam gua dengan efek cahaya magis"
     }, ]
