@@ -95,3 +95,9 @@ markers.forEach(marker => {
 // Mengubah size map agar marker terlihat
 const markerGroup = new L.featureGroup(markers.map(m => L.marker(m.coords)));
 map.fitBounds(markerGroup.getBounds().pad(0.5));
+
+// Menambag toggle mobile menu
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('show');
+}
