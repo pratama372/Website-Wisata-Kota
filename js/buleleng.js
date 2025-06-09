@@ -25,3 +25,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Menambahkan Hero image slider
 const heroSlides = document.querySelectorAll('.hero-slide');
 let currentSlide = 0;
+
+function showSlide(index) {
+    heroSlides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % heroSlides.length;
+    showSlide(currentSlide);
+}
