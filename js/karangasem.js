@@ -60,3 +60,11 @@ const customIcon = L.icon({
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]
 });
+
+// Menambahkan marker untuk objek wisata
+const markers = [
+    {
+        coords: [-8.4123473, 115.5872919], // Tirta Gangga
+        title: "Tirta Gangga",
+        desc: "Istana air kerajaan dengan kolam bertingkat dan taman yang asri di kaki Gunung Agung"
+    }, ];
