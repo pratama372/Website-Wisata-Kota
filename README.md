@@ -23,7 +23,7 @@ BALIWonderful adalah website informasi tempat wisata di Bali yang menyajikan des
 - Halaman utama dengan kartu destinations yang berisi kabupaten di Bali.
 - Bagian Destination Highlights yang berisi penjelasan singkat dan video.
 - Kartu Festival & Tradisi Bali (Galungan & Kuningan, Nyepi & Pengerupukan, Bali Arts Festival, Bali International Film Festival)
-- Kartu tips perjalanan (travel tips, Tips Liburan Musim Panas di Bali, Tips Liburan Saat Musim Hujan di Bali, Merencanakan Perjalanan di Awal).
+- Kartu tips perjalanan (travel tips, Tips Liburan Musim Panas di Bali, Tips Liburan Saat Musim Hujan   di Bali, Merencanakan Perjalanan di Awal).
 - Travel Gallery yang otomatis scroll sendiri dan saat di klik gambar bisa terbuka.
 - Layout responsif yang dapat diakses di berbagai perangkat.
 - Navigasi cepat dan ringan.
