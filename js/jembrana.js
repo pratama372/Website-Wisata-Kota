@@ -39,3 +39,11 @@ function nextSlide() {
 
 // Change slide every 5 seconds
 setInterval(nextSlide, 5000);
+
+// Menambahkan scroll map zoom tanpa zoom control
+const map = L.map('mapid', {
+    center: [-8.38, 114.68], // Centered around Jembrana attractions
+    zoom: 11,
+    scrollWheelZoom: true,
+    zoomControl: false
+});
