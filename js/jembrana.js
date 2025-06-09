@@ -95,3 +95,9 @@ markers.forEach(marker => {
 // Menyesuaikan padding map
 const markerGroup = new L.featureGroup(markers.map(m => L.marker(m.coords)));
 map.fitBounds(markerGroup.getBounds().pad(0.5));
+
+// Toggle mobile menu
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('show');
+}
