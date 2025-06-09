@@ -25,3 +25,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Menambahkan Hero image slider
 const heroSlides = document.querySelectorAll('.hero-slide');
 let currentSlide = 0;
+
+function showSlide(index) {
+    heroSlides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % heroSlides.length;
+    showSlide(currentSlide);
+}
+
+// Menambahkan change slide
+setInterval(nextSlide, 5000);
+
+// Menambahkan scroll map zoom tanpa zoom control
+const map = L.map('mapid', {
+    center: [-8.18, 115.10], // Adjusted center point for better view of all locations
+    zoom: 10,
+    scrollWheelZoom: true,
+    zoomControl: false
+});
