@@ -72,4 +72,9 @@ const markers = [
         coords: [-8.465800, 115.631300], // Taman Ujung
         title: "Taman Ujung Sukasada",
         desc: "Kompleks taman air megah peninggalan Raja Karangasem dengan kolam dan paviliun"
-    }, ];
+    }, 
+    {
+        coords: [-8.333333, 115.650000], // Pantai Amed
+        title: "Pantai Amed",
+        desc: "Serangkaian pantai pasir hitam dengan pemandangan Gunung Agung yang memukau"
+    },];
