@@ -67,4 +67,9 @@ const markers = [
         coords: [-8.4123473, 115.5872919], // Tirta Gangga
         title: "Tirta Gangga",
         desc: "Istana air kerajaan dengan kolam bertingkat dan taman yang asri di kaki Gunung Agung"
+    },
+    {
+        coords: [-8.465800, 115.631300], // Taman Ujung
+        title: "Taman Ujung Sukasada",
+        desc: "Kompleks taman air megah peninggalan Raja Karangasem dengan kolam dan paviliun"
     }, ];
