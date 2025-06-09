@@ -77,4 +77,9 @@ const markers = [
         coords: [-8.333333, 115.650000], // Pantai Amed
         title: "Pantai Amed",
         desc: "Serangkaian pantai pasir hitam dengan pemandangan Gunung Agung yang memukau"
-    },];
+    },
+    {
+        coords: [-8.3916251, 115.6312085], // Pura Lempuyang
+        title: "Pura Lempuyang",
+        desc: "Salah satu pura paling suci di Bali dengan 'Pintu Surga' yang ikonik"
+    }];
