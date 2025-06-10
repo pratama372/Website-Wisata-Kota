@@ -4,18 +4,22 @@
 BALIWonderful adalah website informasi tempat wisata di Bali yang menyajikan deskripsi, gambar, dan tips perjalanan bagi wisatawan lokal maupun mancanegara.
 
 ## Daftar Anggota
-| Nama                            | NIM        | Username Github    |  Peran/Tugas                                        |
-|---------------------------------|------------|--------------------|-----------------------------------------------------|
-| Dewa Gede Pratama Yasa Putra    | 240010047  | @pratama327        |  Membuat halaman denpasar, gianyar, badung dan isinya (HTML, CSS responsif, JavaScript) |
-| Naufal Wiartawan Abdi Swastika  | 240010048  | @Naufall0000       |  Membuat halaman homepage, Festival & Tradisi Bali, Travel Tips (HTML, CSS responsif, JavaScript) |
-| Made Shoma Nathawhimbardhi      | 240010097  | @Shoma097          |  Membuat halaman bangli, buleleng, karangasem (HTML, JavaScript)  |                                   
-| Albertus Surya Darmawan Susilo  | 240010040  | @bobythebaby       |  Membuat halaman jembrana, klungkung, tabanan (HTML, JavaScript) & mencari gambar untuk kabupaten dan wisata  |
+## Daftar Anggota
+
+| Nama                              | NIM        | Username Github     | Peran/Tugas                                                                                 |
+|-----------------------------------|------------|----------------------|---------------------------------------------------------------------------------------------|
+| Dewa Gede Pratama Yasa Putra     | 240010047  | @pratama327          | Halaman Denpasar, Gianyar, Badung; styling kabupaten & wisata (HTML, CSS, JavaScript)       |
+| Naufal Wiartawan Abdi Swastika   | 240010048  | @Naufal10000         | Halaman Homepage, Festival & Tradisi Bali, Travel Tips; styling homepage dan tips travel (HTML, CSS, JavaScript) |
+| Made Shoma Nathawhimbardhi       | 240010097  | @Shoma097            | Halaman Bangli, Buleleng, Karangasem (HTML, JavaScript)                                     |
+| Albertus Surya Darmawan Susilo   | 240010040  | @bobythebaby         | Halaman Jembrana, Klungkung, Tabanan (HTML, JavaScript); mencari gambar kabupaten & wisata  |
+
 
 # Teknologi yang Digunakan
 - **HTML5**
 - **CSS3** (termasuk Flexbox dan Grid)
 - **JavaScript**
 - **Google Fonts (Poppins)**
+- **Font Awesome 6.5.0 (untuk ikon)**
 - **Git dan GitHub**
 - **GitHub Pages** (untuk deployment)
 
