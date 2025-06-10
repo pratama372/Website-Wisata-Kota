@@ -1,4 +1,4 @@
-// menambahkan header scroll effect
+// Menambahkan header scroll effect
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Menambahkan Smooth scrolling for navigation
+// Menambahkan smooth scrolling for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -22,7 +22,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Hero image slider
+// Menambahkan hero image slider
 const heroSlides = document.querySelectorAll('.hero-slide');
 let currentSlide = 0;
 
@@ -48,12 +48,12 @@ const map = L.map('mapid', {
     zoomControl: false
 });
 
-// Menambahkan tile layer
+// Menambahkan tile 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Add custom icon
+// Menambahkan custom icon
 const customIcon = L.icon({
     iconUrl: 'https://cdn-icons-png.flaticon.com/512/684/684908.png',
     iconSize: [32, 32],
@@ -61,7 +61,7 @@ const customIcon = L.icon({
     popupAnchor: [0, -32]
 });
 
-// Menambahkan koordinat tempat wisata
+// Menambahkan koordinat objek wisata
 const markers = [
     {
         coords: [-8.4555, 115.3636], // Desa Penglipuran (corrected)
@@ -85,7 +85,7 @@ const markers = [
     }
 ];
 
-// Menambahkan marker
+// Menambahkan marker pada map
 markers.forEach(marker => {
     L.marker(marker.coords, { icon: customIcon }).addTo(map)
         .bindPopup(`<b>${marker.title}</b><br><small>${marker.desc}</small>`)

@@ -1,4 +1,4 @@
-// Menambahkan Header scroll effect
+// Menambahkan header scroll effect
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Menambahkan Smooth scrolling
+// Menambahkan smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -22,7 +22,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Menambahkan Hero image slider
+// Menambahkan hero image slider
 const heroSlides = document.querySelectorAll('.hero-slide');
 let currentSlide = 0;
 
@@ -37,7 +37,7 @@ function nextSlide() {
     showSlide(currentSlide);
 }
 
-// Menambahkan change slide
+// Menambahkan slide change
 setInterval(nextSlide, 5000);
 
 // Menambahkan scroll map zoom tanpa zoom control
@@ -48,7 +48,7 @@ const map = L.map('mapid', {
     zoomControl: false
 });
 
-// Menambahkan tile layer
+// Menambahkan tile 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
@@ -61,7 +61,7 @@ const customIcon = L.icon({
     popupAnchor: [0, -32]
 });
 
-// Menambahkan marker untuk objek wisata
+// Menambahkan koordinat objek wisata
 const markers = [
     {
         coords: [-8.09876, 114.51448], // Pulau Menjangan
@@ -92,11 +92,11 @@ markers.forEach(marker => {
         .openPopup();
 });
 
-// Mengubah size map agar marker terlihat
+// Menambahkan padding ukuran map agar semua marker terlihat
 const markerGroup = new L.featureGroup(markers.map(m => L.marker(m.coords)));
 map.fitBounds(markerGroup.getBounds().pad(0.5));
 
-// Menambah toggle mobile menu
+// Menambah toggle menu mobile
 function toggleMenu() {
     const nav = document.querySelector('nav');
     nav.classList.toggle('show');
