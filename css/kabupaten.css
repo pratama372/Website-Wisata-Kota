@@ -26,14 +26,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    max-width: 100% ;
     color: var(--dark);
-    line-height: 1.7;
-    background-color: var(--light);
+    background-color: #fff;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 h1, h2, h3, h4 {
@@ -124,7 +126,7 @@ img {
 /* ===== HEADER ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -134,7 +136,7 @@ img {
   body {
     background-color: #fff;
     color: #333;
-  }
+  } */
   
   /* Menambahkan header dengan logo dan navigation bar */
   /* CSS NAVBAR HEADER */
@@ -176,7 +178,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #3498db;
+    color: orangered;
 }
 
   /* Menambahkan styling untuk hamburger menu dan navigasi responsif di mobile */
