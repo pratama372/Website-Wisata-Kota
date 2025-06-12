@@ -30,6 +30,7 @@ header {
     -webkit-backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
+    height: 70px;
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -641,14 +642,15 @@ hr {
     }
 }
 
+/* Responsive nav for mobile */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
 
   nav {
-    position: absolute;
-    top: 60px;
+    position: fixed; 
+    top: 70px;
     left: 0;
     right: 0;
     background-color: white;
@@ -657,55 +659,44 @@ hr {
     display: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 999;
+    padding: 10px 0;
   }
 
   nav.show {
     display: flex;
-    }
+  }
 
   nav a {
-    margin: 15px 0;
- }}
+    margin: 10px 0;
+    font-size: 18px;
+  }
+}
 
- /* Responsive nav for tablet */
+/* Responsive nav for tablet */
 @media (max-width: 1091px) {
   .hamburger {
-    display: flex;
+      display: flex;
   }
 
   nav {
-    position: absolute;
-    top: 70px; 
-    left: 0;
-    right: 0;
-    background-color: white;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+      position: fixed;
+      top: 70px; 
+      left: 0;
+      right: 0;
+      background-color: white;
+      flex-direction: column;
+      align-items: center;
+      display: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 999;
   }
 
   nav.show {
-    display: flex;
+      display: flex;
   }
 
   nav a {
-    margin: 20px 0;
-    font-size: 18px; 
-  }
-
-  header {
-    padding: 10px 20px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .logo {
-    font-size: 24px;
-  }
-
-  .nav-links {
-    display: none;
+      margin: 20px 0;
+      font-size: 18px;
   }
 }
