@@ -237,7 +237,7 @@ nav {
 
   nav {
     position: absolute;
-    top: 70px; /* bisa disesuaikan dengan tinggi header */
+    top: 70px;  
     left: 0;
     right: 0;
     background-color: white;
@@ -254,7 +254,7 @@ nav {
 
   nav a {
     margin: 20px 0;
-    font-size: 18px; /* lebih besar untuk kenyamanan tablet */
+    font-size: 18px;  
   }
 
   header {

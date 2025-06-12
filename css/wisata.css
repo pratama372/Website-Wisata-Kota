@@ -666,3 +666,46 @@ hr {
   nav a {
     margin: 15px 0;
  }}
+
+ /* Responsive nav for tablet */
+@media (max-width: 1091px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px; 
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a {
+    margin: 20px 0;
+    font-size: 18px; 
+  }
+
+  header {
+    padding: 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
