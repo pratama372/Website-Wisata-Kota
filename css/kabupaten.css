@@ -26,14 +26,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
     color: var(--dark);
-    line-height: 1.7;
-    background-color: var(--light);
+    /* line-height: 1.7; */
+    /* background-color: var(--light); */
+    background-color: #fff;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 h1, h2, h3, h4 {
@@ -122,25 +125,10 @@ img {
 }
 
 /* ===== HEADER ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  body {
-    background-color: #fff;
-    color: #333;
-  }
-  
   /* Menambahkan header dengan logo dan navigation bar */
-  /* CSS NAVBAR HEADER */
-  header {
-    background-color: rgba(255, 255, 255, 0.85); 
-    backdrop-filter: blur(10px); 
+ header {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
@@ -151,27 +139,33 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 16px 32px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-bottom: 0px solid rgba(0, 0, 0, 0.05);
-  }
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
 
-  .logo {
+.logo {
     text-decoration: none;
     font-size: 24px;
     font-weight: 700;
     color: gray;
-  }
+}
 
-  nav a {
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
     margin: 0 15px;
     text-decoration: none;
     color: #333;
-  }
-
-  nav a:hover {
-    color: orangered;
+    font-weight: 500;
     transition: color 0.3s ease;
-  }
+}
+
+nav a:hover {
+    color: orangered;
+}
 
   /* Menambahkan styling untuk hamburger menu dan navigasi responsif di mobile */
   /* Hamburger Menu */
@@ -219,6 +213,49 @@ nav {
   nav a {
     margin: 15px 0;
 }
+}
+
+/* Responsive nav for tablet */
+@media (max-width: 1091px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px; /* bisa disesuaikan dengan tinggi header */
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a {
+    margin: 20px 0;
+    font-size: 18px; /* lebih besar untuk kenyamanan tablet */
+  }
+
+  header {
+    padding: 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    display: none;
+  }
 }
 
 /* ===== HERO ===== */
