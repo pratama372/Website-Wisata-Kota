@@ -14,17 +14,18 @@
     <!-- Menambahkan header -->
     <header>
         <a href="index.html" class="logo">BALIWonderful</a>
-        
-        <div class="hamburger" onclick="toggleMenu()">
+          <div class="hamburger" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#destinations" class="nav-link">Destinations</a>
-            <a href="index.html#highlights">Highlights</a>
-            <a href="index.html#traveltips">Travel Tips</a>
+          </div>
+          <nav>
+          <a href="index.html">Home</a>
+          <a href="#destinations" class="nav-link">Destinations</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#events-highlight">Festival & Tradisi Bali</a>
+          <a href="#traveltips">Travel Tips</a>
+          <a href="#footer">Contact</a>
         </nav>
     </header>
 
@@ -32,9 +33,9 @@
     <section id="home" class="hero">
         <div class="hero-slides">
             <div class="hero-slide active" style="background-image: url('assets/pulaumenjangan.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('assets/danaubuyan.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('assets/danau-buyan.jpg')"></div>
             <div class="hero-slide" style="background-image: url('assets/pantailovina.jpeg')"></div>
-            <div class="hero-slide" style="background-image: url('assets/airterjunsekumpul.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('assets/air-terjun-sekumpul.jpg')"></div>
         </div>
         
         <div class="hero-content">
@@ -70,17 +71,17 @@
                     <div class="gallery-content">
                         <h3 class="gallery-title">Pulau Menjangan</h3>
                         <p class="gallery-desc">Pulau kecil di Taman Nasional Bali Barat dengan terumbu karang spektakuler dan biota laut yang kaya, surga bagi penyelam.</p>
-                        <a href="#" class="gallery-link">Lihat Detail →</a>
+                        <a href="pulau-menjangan.html" class="gallery-link">Lihat Detail →</a>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-img">
-                        <img src="assets/danaubuyan.jpg" alt="Danau Buyan">
+                        <img src="assets/danau-buyan.jpg" alt="Danau Buyan">
                     </div>
                     <div class="gallery-content">
                         <h3 class="gallery-title">Danau Buyan</h3>
                         <p class="gallery-desc">Danau vulkanik yang dikelilingi hutan hijau subur dengan udara sejuk dan pemandangan memukau.</p>
-                        <a href="#" class="gallery-link">Lihat Detail →</a>
+                        <a href="danau-buyan.html" class="gallery-link">Lihat Detail →</a>
                     </div>
                 </div>
                 <div class="gallery-item">
@@ -90,17 +91,17 @@
                     <div class="gallery-content">
                         <h3 class="gallery-title">Pantai Lovina</h3>
                         <p class="gallery-desc">Pantai dengan pasir hitam yang tenang, terkenal dengan atraksi lumba-lumba di pagi hari.</p>
-                        <a href="#" class="gallery-link">Lihat Detail →</a>
+                        <a href="pantai-lovina.html" class="gallery-link">Lihat Detail →</a>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-img">
-                        <img src="assets/airterjunsekumpul.jpg" alt="Air Terjun Sekumpul">
+                        <img src="assets/air-terjun-sekumpul.jpg" alt="Air Terjun Sekumpul">
                     </div>
                     <div class="gallery-content">
                         <h3 class="gallery-title">Air Terjun Sekumpul</h3>
                         <p class="gallery-desc">Air terjun tertinggi di Bali dengan ketinggian sekitar 80 meter, dikelilingi oleh hutan tropis yang hijau.</p>
-                        <a href="#" class="gallery-link">Lihat Detail →</a>
+                        <a href="air-terjun-sekumpul.html" class="gallery-link">Lihat Detail →</a>
                     </div>
                 </div>
             </div>
@@ -118,43 +119,44 @@
     </section>
 
     <!-- ===== Menambahkan footer ===== -->
-   <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-section">
-      <h3>BALIWonderful</h3>
-      <div class="underline"></div>
-      <p>Menjelajahi keindahan Bali Utara dengan pesona alam yang masih alami dan budaya yang autentik.</p>
-      <div class="social-icons">
-        <a>📱</i></a>
-        <a >📸</i></a>
-        <a >🐦</i></a>
-        <a >📘</i></a>
-      </div>
-    </div>
-    <div class="footer-section">
-      <h3>Tautan Cepat</h3>
-      <div class="underline"></div>
-      <ul>
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#">Galeri</a></li>
-        <li><a href="#">Lokasi</a></li>
-        
-      </ul>
-    </div>
-    
-    <div class="footer-section">
-      <h3>Kontak</h3>
-      <div class="underline"></div>
-      <p>+623612345678</p>
-      <p>baliwonderful@gmail.com</p>
-      <p>Jl. Raya Singaraja No.123</p>
-      <p>Buleleng, Bali</p>
-    </div>
-  </div>
-  <hr />
-  <p class="copyright">© 2023 Wisata Buleleng. Semua Hak Dilindungi.</p>
-</footer>
+    <footer class="footer">
+      <section id="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>BALIWonderful</h3>
+            <div class="underline"></div>
+            <p>Destinasi liburan terbaik dengan pemandangan alam menakjubkan.</p>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+          </div>
+          <div class="footer-section">
+            <h3>Tautan Cepat</h3>
+            <div class="underline"></div>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="index.html#destinations">Lokasi</a></li>
+              <li><a href="index.html#traveltips">Tips</a></li>
+              <li><a href="index.html#gallery">Galeri</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Kontak</h3>
+            <div class="underline"></div>
+            <p>+623612345678</p>
+            <p>baliwonderful@gmail.com</p>
+            <p>Jl. Raya Wisata No.123</p>
+            <p>Gianyar, Bali</p>
+          </div>
+        </div>
+        <hr/>
+        <p class="copyright">© 2025 BALIWonderful. Semua Hak Dilindungi.</p>
+      </section>
+    </footer>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="nav-toggle.js"></script>
