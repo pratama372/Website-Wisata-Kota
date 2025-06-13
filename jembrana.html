@@ -11,27 +11,29 @@
 </head>
 <body>
     <!-- ===== Menambahkan header ===== -->
+<!-- header -->
     <header>
         <a href="index.html" class="logo">BALIWonderful</a>
-        
-        <div class="hamburger" onclick="toggleMenu()">
+          <div class="hamburger" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#destinations" class="nav-link">Destinations</a>
-            <a href="index.html#highlights">Highlights</a>
-            <a href="index.html#traveltips">Travel Tips</a>
+          </div>
+          <nav>
+          <a href="index.html">Home</a>
+          <a href="#destinations" class="nav-link">Destinations</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#events-highlight">Festival & Tradisi Bali</a>
+          <a href="#traveltips">Travel Tips</a>
+          <a href="#footer">Contact</a>
         </nav>
     </header>
 
-        <!-- ===== Menambahkan hero ===== -->
+    <!-- ===== Menambahkan hero ===== -->
     <section id="home" class="hero">
         <div class="hero-slides">
             <div class="hero-slide active" style="background-image: url('assets/pantaimedewi.jpg.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('assets/TamanNasionalBb.jpg.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('assets/Taman-Nasional-Bali-Barat.jpg')"></div>
             <div class="hero-slide" style="background-image: url('assets/sangkaragung.jpg')"></div>
             <div class="hero-slide" style="background-image: url('assets/purarambutsiwi.jpg.jpg')"></div>
         </div>
@@ -70,17 +72,17 @@
                     <div class="gallery-content">
                         <h3 class="gallery-title">Pantai Medewi</h3>
                         <p class="gallery-desc">Pantai dengan ombak panjang yang populer di kalangan peselancar, dikelilingi pemandangan sawah dan perkebunan kelapa.</p>
-                        <a href="#" class="gallery-link">Lihat Detail →</a>
+                        <a href="pantai-medewi.html" class="gallery-link">Lihat Detail →</a>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-img">
-                        <img src="assets/TamanNasionalBb.jpg.jpg" alt="Taman Nasional Bali Barat">
+                        <img src="assets/Taman-Nasional-Bali-Barat.jpg" alt="Taman Nasional Bali Barat">
                     </div>
                     <div class="gallery-content">
                         <h3 class="gallery-title">Taman Nasional Bali Barat</h3>
                         <p class="gallery-desc">Kawasan konservasi alam yang melindungi flora dan fauna endemik Bali termasuk jalak bali yang langka.</p>
-                        <a href="#" class="gallery-link">Lihat Detail →</a>
+                        <a href="taman-nasional-bali-barat.html" class="gallery-link">Lihat Detail →</a>
                     </div>
                 </div>
                 <div class="gallery-item">
@@ -90,7 +92,7 @@
                     <div class="gallery-content">
                         <h3 class="gallery-title">Sangkaragung</h3>
                         <p class="gallery-desc">Desa nelayan tradisional dengan pantai berpasir hitam yang indah dan kehidupan masyarakat pesisir yang autentik.</p>
-                        <a href="#" class="gallery-link">Lihat Detail →</a>
+                        <a href="sangkaragung.html" class="gallery-link">Lihat Detail →</a>
                     </div>
                 </div>
                 <div class="gallery-item">
@@ -100,7 +102,7 @@
                     <div class="gallery-content">
                         <h3 class="gallery-title">Pura Rambut Siwi</h3>
                         <p class="gallery-desc">Pura penting di Bali yang terletak di tebing menghadap laut, dikenal dengan legenda rambut Dang Hyang Nirartha.</p>
-                        <a href="#" class="gallery-link">Lihat Detail →</a>
+                        <a href="pura-rambut-siwi.html" class="gallery-link">Lihat Detail →</a>
                     </div>
                 </div>
             </div>
@@ -119,39 +121,42 @@
 
         <!-- ===== Menambahkan footer ===== -->
     <footer class="footer">
+      <section id="footer">
         <div class="footer-container">
-            <div class="footer-section">
-                <h3>BALIWonderful</h3>
-                <div class="underline"></div>
-                <p>Menjelajahi keindahan alam dan budaya tradisional Jembrana yang memukau.</p>
-                <div class="social-icons">
-                    <a>📱</a>
-                    <a>📸</a>
-                    <a>🐦</a>
-                    <a>📘</a>
-                </div>
+          <div class="footer-section">
+            <h3>BALIWonderful</h3>
+            <div class="underline"></div>
+            <p>Destinasi liburan terbaik dengan pemandangan alam menakjubkan.</p>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <div class="footer-section">
-                <h3>Tautan Cepat</h3>
-                <div class="underline"></div>
-                <ul>
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Tentang Kami</a></li>
-                    <li><a href="#">Galeri</a></li>
-                    <li><a href="#">Lokasi</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Kontak</h3>
-                <div class="underline"></div>
-                <p>+62363612345</p>
-                <p>jembrana@baliwonderful.com</p>
-                <p>Jl. Ngurah Rai No.1</p>
-                <p>Negara, Jembrana, Bali</p>
-            </div>
+
+          </div>
+          <div class="footer-section">
+            <h3>Tautan Cepat</h3>
+            <div class="underline"></div>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="index.html#destinations">Lokasi</a></li>
+              <li><a href="index.html#traveltips">Tips</a></li>
+              <li><a href="index.html#gallery">Galeri</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Kontak</h3>
+            <div class="underline"></div>
+            <p>+623612345678</p>
+            <p>baliwonderful@gmail.com</p>
+            <p>Jl. Raya Wisata No.123</p>
+            <p>Gianyar, Bali</p>
+          </div>
         </div>
-        <hr />
-        <p class="copyright">© 2023 Wisata Jembrana. Semua Hak Dilindungi.</p>
+        <hr/>
+        <p class="copyright">© 2025 BALIWonderful. Semua Hak Dilindungi.</p>
+      </section>
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
