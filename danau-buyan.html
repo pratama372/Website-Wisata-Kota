@@ -11,26 +11,28 @@
 </head>
 <body>
     <!-- Menambahkan header -->
+<!-- header -->
     <header>
         <a href="index.html" class="logo">BALIWonderful</a>
-        
-        <div class="hamburger" onclick="toggleMenu()">
+          <div class="hamburger" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#destinations" class="nav-link">Destinations</a>
-            <a href="index.html#highlights">Highlights</a>
-            <a href="index.html#traveltips">Travel Tips</a>
+          </div>
+          <nav>
+          <a href="index.html">Home</a>
+          <a href="#destinations" class="nav-link">Destinations</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#events-highlight">Festival & Tradisi Bali</a>
+          <a href="#traveltips">Travel Tips</a>
+          <a href="#footer">Contact</a>
         </nav>
     </header>
 
     <!-- Menambahkan hero -->
     <section class="profile-hero" id="home">        
         <!-- Background Image -->
-        <img src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?w=1200&fit=crop" 
+        <img src="assets/danau-buyan.jpg" 
              alt="Danau Buyan Background" 
              class="hero-background">
         <div class="overlay"></div>
@@ -53,8 +55,8 @@
                     </p>
                 </div>
                 <div class="welcome-images">
-                    <img src="https://images.unsplash.com/photo-1597755585179-1c7c3a0c1a1d?w=800&h=600&fit=crop" alt="Pemandangan Danau Buyan">
-                    <img src="https://images.unsplash.com/photo-1597755585165-9c1c7c3a0c1a?w=800&h=600&fit=crop" alt="Pemandangan Sekitar Danau">
+                    <img src="assets/danau-buyan-pemandangan.jpg" alt="Pemandangan Danau Buyan">
+                    <img src="assets/danau-buyan-pemandangan-sekitar-danau.jpg" alt="Pemandangan Sekitar Danau">
                 </div>
             </div>
         </div>
@@ -73,7 +75,7 @@
             <div class="destinations-grid">
                 <!-- Destination 1 -->
                 <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1597755585178-1c7c3a0c1a1c?w=800&h=600&fit=crop" alt="Pemandangan Danau">
+                    <img src="assets/danau-buyan-pemandangan-danau.jpg" alt="Pemandangan Danau">
                     <div class="destination-info">
                         <h3 class="destination-name">Pemandangan Danau</h3>
                         <p class="destination-location">Danau Buyan</p>
@@ -85,7 +87,7 @@
       
                 <!-- Destination 2 -->
                 <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1597755585177-1c7c3a0c1a1b?w=800&h=600&fit=crop" alt="Jalur Trekking">
+                    <img src="assets/danau-buyan-jalur-tracking.jpg" alt="Jalur Trekking">
                     <div class="destination-info">
                         <h3 class="destination-name">Jalur Trekking</h3>
                         <p class="destination-location">Sekitar Danau</p>
@@ -97,12 +99,12 @@
         
                 <!-- Destination 3 -->
                 <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1597755585176-1c7c3a0c1a1a?w=800&h=600&fit=crop" alt="Aktivitas Air">
+                    <img src="assets/danau-buyan-aktivitas.jpg" alt="Aktivitas">
                     <div class="destination-info">
-                        <h3 class="destination-name">Aktivitas Air</h3>
+                        <h3 class="destination-name">Aktivitas</h3>
                         <p class="destination-location">Danau Buyan</p>
                         <p class="destination-preview">
-                            Berbagai aktivitas air seperti memancing dan bersepeda air di danau yang tenang.
+                            Berbagai aktivitas air seperti berkemah di pinggir danau yang tenang.
                         </p>
                     </div>
                 </div>
@@ -110,28 +112,30 @@
         </div>
     </section>
 
-    <!-- footer -->
+    <!-- Menambahkan footer -->
     <footer class="footer">
       <section id="footer">
         <div class="footer-container">
           <div class="footer-section">
             <h3>BALIWonderful</h3>
             <div class="underline"></div>
-            <p>Temukan keindahan alam Bali yang memukau di Danau Buyan.</p>
+            <p>Destinasi liburan terbaik dengan pemandangan alam menakjubkan.</p>
             <div class="social-icons">
               <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
               <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
               <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
               <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
+
           </div>
           <div class="footer-section">
             <h3>Tautan Cepat</h3>
             <div class="underline"></div>
             <ul>
-              <li><a href="#">Beranda</a></li>
-              <li><a href="#gallery">Galeri</a></li>
-              <li><a href="#">Lokasi</a></li>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="index.html#destinations">Lokasi</a></li>
+              <li><a href="index.html#traveltips">Tips</a></li>
+              <li><a href="index.html#gallery">Galeri</a></li>
             </ul>
           </div>
           <div class="footer-section">
@@ -139,8 +143,8 @@
             <div class="underline"></div>
             <p>+623612345678</p>
             <p>baliwonderful@gmail.com</p>
-            <p>Kawasan Bedugul, Buleleng</p>
-            <p>Kabupaten Buleleng, Bali</p>
+            <p>Jl. Raya Wisata No.123</p>
+            <p>Gianyar, Bali</p>
           </div>
         </div>
         <hr/>
