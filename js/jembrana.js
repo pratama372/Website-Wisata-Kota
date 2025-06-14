@@ -69,7 +69,7 @@ const markers = [
         desc: "Pantai dengan ombak panjang yang populer di kalangan peselancar"
     }, 
     {
-        coords: [-8.340500, 114.568000], // Taman Nasional Bali Barat
+        coords: [-8.1200, 114.4500], // Taman Nasional Bali Barat
         title: "Taman Nasional Bali Barat",
         desc: "Kawasan konservasi alam yang melindungi flora dan fauna endemik Bali"
     },
