@@ -42,3 +42,9 @@ const markers = [
     desc: "Kebun botani seluas 157 hektar di Bedugul dengan koleksi lebih dari 2,000 jenis tanaman tropis.",
   },
 ];
+// Add markers to map
+markers.forEach((marker) => {
+  L.marker(marker.coords, { icon: customIcon })
+    .addTo(map)
+    .bindPopup(`<b>${marker.title}</b><br>${marker.desc}`);
+});
