@@ -141,7 +141,7 @@ img {
     align-items: center;
     padding: 16px 32px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 0px solid rgba(0, 0, 0, 0.05);
 }
 
 .logo {
@@ -550,7 +550,7 @@ nav {
 .footer-section .underline {
   width: 30px;
   height: 3px;
-  background-color: orange;
+  background-color: orangered;
   margin-bottom: 15px;
 }
 
@@ -572,7 +572,7 @@ nav {
 }
 
 .footer-section ul li a:hover {
-  color: orange;
+  color: orangered;
 }
 
 .social-icons a {

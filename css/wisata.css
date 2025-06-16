@@ -39,7 +39,7 @@ header {
     align-items: center;
     padding: 16px 32px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 0px solid rgba(0, 0, 0, 0.05);
 }
 
 .logo {
@@ -63,7 +63,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #3498db;
+    color: orangered;
 }
 
 /* Hamburger Menu */
@@ -425,7 +425,7 @@ nav {
 .footer-section .underline {
     width: 30px;
     height: 3px;
-    background-color: orange;
+    background-color: orangered;
     margin-bottom: 15px;
 }
 
@@ -465,7 +465,7 @@ nav {
 }
 
 .social-icons a:hover {
-    background-color: orange;
+    background-color: orangered;
 }
 
 hr {

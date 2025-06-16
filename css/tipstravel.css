@@ -360,7 +360,7 @@ nav {
 .footer-section .underline {
   width: 30px;
   height: 3px;
-  background-color: orange;
+  background-color: orangered;
   margin-bottom: 15px;
 }
 
@@ -382,7 +382,7 @@ nav {
 }
 
 .footer-section ul li a:hover {
-  color: orange;
+  color: orangered;
 }
 
 .social-icons a {
