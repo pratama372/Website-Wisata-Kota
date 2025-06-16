@@ -48,3 +48,7 @@ markers.forEach((marker) => {
     .addTo(map)
     .bindPopup(`<b>${marker.title}</b><br>${marker.desc}`);
 });
+
+// Fit map to show all markers with padding
+const markerGroup = new L.featureGroup(markers.map((m) => L.marker(m.coords)));
+map.fitBounds(markerGroup.getBounds().pad(0.2));
