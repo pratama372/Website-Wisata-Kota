@@ -19,3 +19,26 @@ const customIcon = L.icon({
   iconAnchor: [16, 32],
   popupAnchor: [0, -32],
 });
+
+const markers = [
+  {
+    coords: [-8.3525, 115.1389], // Desa Wisata Jatiluwih
+    title: "Desa Wisata Jatiluwih",
+    desc: "Warisan Dunia UNESCO dengan panorama sawah berundak yang spektakuler dan sistem subak tradisional.",
+  },
+  {
+    coords: [-8.2744, 115.1661], // Pura Ulun Danu Beratan
+    title: "Pura Ulun Danu Beratan",
+    desc: "Kuil air ikonik di tepi Danau Beratan dengan arsitektur megah yang seolah mengapung di atas air.",
+  },
+  {
+    coords: [-8.4439, 114.8894], // Pantai Soka
+    title: "Pantai Soka",
+    desc: "Pantai tersembunyi dengan tebing karang dramatis dan pasir hitam vulkanik di Bali Barat.",
+  },
+  {
+    coords: [-8.275, 115.165], // Kebun Raya Bali
+    title: "Kebun Raya Bali",
+    desc: "Kebun botani seluas 157 hektar di Bedugul dengan koleksi lebih dari 2,000 jenis tanaman tropis.",
+  },
+];
