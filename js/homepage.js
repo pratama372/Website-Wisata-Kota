@@ -6,7 +6,7 @@ const images = [
     'assets/klingkingbeach.jpeg',
     'assets/tamanujung2.jpeg',
     'assets/danaubatur2.jpeg',
-    'assets/pantailovina2.jpeg'
+    'assets/pantailovina.jpeg'
   ];
 
 let current = 0;
