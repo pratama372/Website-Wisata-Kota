@@ -27,7 +27,7 @@ const markers = [
     desc: "Museum sejarah dan budaya Bali dengan koleksi arkeologi, seni, dan etnografi. Terletak di pusat kota Denpasar."
   },
   {
-    coords: [-8.6830, 115.2670],  // Pantai Sanur
+    coords: [-8.6825, 115.264],  // Pantai Sanur
     title: "Pantai Sanur",
     desc: "Pantai tenang yang cocok untuk melihat matahari terbit dan aktivitas keluarga. Favorit wisatawan lokal dan mancanegara."
   },
