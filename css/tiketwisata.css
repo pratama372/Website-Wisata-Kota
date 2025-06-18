@@ -178,3 +178,68 @@ nav {
   font-size: 0.9em;
   color: #ddd;
 }
+
+/* CARDS */
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: stretch;  
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;       
+  height: 100%;                 
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-image {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 4px 0;
+}
+
+.price {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 10px;
+}
