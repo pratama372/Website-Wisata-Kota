@@ -4,7 +4,6 @@
 BALIWonderful adalah website informasi tempat wisata di Bali yang menyajikan deskripsi, gambar, dan tips perjalanan bagi wisatawan lokal maupun mancanegara.
 
 ## Daftar Anggota
-## Daftar Anggota
 
 | Nama                              | NIM        | Username Github     | Peran/Tugas                                                                                 |
 |-----------------------------------|------------|----------------------|---------------------------------------------------------------------------------------------|
