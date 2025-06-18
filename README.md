@@ -39,15 +39,25 @@ BALIWonderful adalah website informasi tempat wisata di Bali yang menyajikan des
 ```plaintext
 project-root/
 ├── index.html
+├── denpasar.html
+├── gianyar.html
+├── badung.html
+├── jembrana.html
+├── tabanan.html
+├── klungkung.html
+├── buleleng.html
+├── karangasem.html
+├── bangli.html
+├── (file HTML lainnya)
 ├── css/
 │   ├── homepage.css
 │   ├── kabupaten.css
 │   ├── tipstravel.css
-│   ├── wisata.css
-│   └── another-style.css
+│   └── wisata.css
 ├── js/
 │   ├── homepage.js
-│   └── nav-toggle.js
+│   ├── nav-toggle.js
+|   └── (file JavaScript lainnya)
 ├── assets/
 │   └── (semua gambar destinasi)
 └── README.md
