@@ -27,7 +27,7 @@ const markers = [
         desc: "Kompleks bangunan bersejarah di Klungkung dengan paviliun pengadilan tradisional dan langit-langit penuh lukisan wayang."
     },
     {
-        coords: [-8.8286, 115.0864],  // Pantai Pasih Uug (Suluban)
+        coords: [-8.732337, 115.451820],  // Pantai Pasih Uug 
         title: "Pantai Pasih Uug",
         desc: "Pantai tersembunyi di balik tebing karang dengan pemandangan spektakuler, populer di kalangan peselancar."
     },
