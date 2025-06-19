@@ -4,7 +4,6 @@
 BALIWonderful adalah website informasi tempat wisata di Bali yang menyajikan deskripsi, gambar, dan tips perjalanan bagi wisatawan lokal maupun mancanegara.
 
 ## Daftar Anggota
-## Daftar Anggota
 
 | Nama                              | NIM        | Username Github     | Peran/Tugas                                                                                 |
 |-----------------------------------|------------|----------------------|---------------------------------------------------------------------------------------------|
@@ -26,7 +25,7 @@ BALIWonderful adalah website informasi tempat wisata di Bali yang menyajikan des
 ## Fitur Utama
 - Navigasi cepat dan ringan.
 - Hero pada bagian halaman utama dengan background gambar dengan fitur transisi otomatis
-- Halaman utama dengan kartu destinations yang berisi kabupaten-kabupaten di Bali.
+- Halaman utama dengan kartu destinations yang berisi kabupaten-kabupaten di Bali, saat kabupaten di klik maka beralih ke halaman lain yang berisi tempat wisata yang berada di kabupaten itu, saat tempat wisata di klik maka akan beralih ke halaman lain yang berisi penjelasan dari wisata tersebut.
 - Bagian Destination Highlights yang berisi penjelasan singkat mengenai bali dan video yang bersumber dari Youtube.
 - Kartu Festival & Tradisi Bali yang berisi Galungan & Kuningan, Nyepi & Pengerupukan, Bali Arts Festival, Bali International Film Festival. Saat kartu di klik maka beralih ke halaman lain yang berisi penjelasan
 - Kartu tips perjalanan Travel Tips, Tips Liburan Musim Panas di Bali, Tips Liburan Saat Musim Hujan   di Bali, Merencanakan Perjalanan di Awal. Saat kartu di klik maka beralih ke halaman lain yang berisi penjelasan
@@ -39,15 +38,25 @@ BALIWonderful adalah website informasi tempat wisata di Bali yang menyajikan des
 ```plaintext
 project-root/
 ├── index.html
+├── denpasar.html
+├── gianyar.html
+├── badung.html
+├── jembrana.html
+├── tabanan.html
+├── klungkung.html
+├── buleleng.html
+├── karangasem.html
+├── bangli.html
+├── (file HTML lainnya)
 ├── css/
 │   ├── homepage.css
 │   ├── kabupaten.css
 │   ├── tipstravel.css
-│   ├── wisata.css
-│   └── another-style.css
+│   └── wisata.css
 ├── js/
 │   ├── homepage.js
-│   └── nav-toggle.js
+│   ├── nav-toggle.js
+|   └── (file JavaScript lainnya)
 ├── assets/
 │   └── (semua gambar destinasi)
 └── README.md

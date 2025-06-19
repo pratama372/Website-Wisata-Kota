@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+  }
+  
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    color: #333;
+  }
+
+   header {
+    background-color: rgba(255, 255, 255, 0.85); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    height: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-bottom: 0px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .logo {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: gray;
+  }
+
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  nav a:hover {
+    color: orangered;
+    transition: color 0.3s ease;
+  }
+
+  /* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Responsive nav for mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav {
+    position: fixed; 
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    padding: 10px 0;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+}
+
+/* Responsive nav for tablet */
+@media (max-width: 1091px) {
+  .hamburger {
+      display: flex;
+  }
+
+  nav {
+      position: fixed;
+      top: 70px; 
+      left: 0;
+      right: 0;
+      background-color: white;
+      flex-direction: column;
+      align-items: center;
+      display: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+  }
+
+  nav.show {
+      display: flex;
+  }
+
+  nav a {
+      margin: 20px 0;
+      font-size: 18px;
+  }
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(0,0,0,0.5));
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+.hero-text p a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.hero-text p {
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+/* CARDS */
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: stretch;  
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;       
+  height: 100%;                 
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-image {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 4px 0;
+}
+
+.price {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* footer */
+.footer {
+  background-color: rgb(232, 232, 232);
+  color: black;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.footer-section .underline {
+  width: 30px;
+  height: 3px;
+  background-color: orangered;
+  margin-bottom: 15px;
+}
+
+.footer-section p, 
+.footer-section li {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: orangered;
+}
+
+.social-icons a {
+  display: inline-block;
+  background-color: #34495e;
+  color: black;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: orange;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid gray;
+  margin: 30px 0;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
