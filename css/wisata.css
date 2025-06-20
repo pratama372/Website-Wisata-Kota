@@ -212,11 +212,11 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 50vh;
+    height: 49vh;
     color: white;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    margin-top: 70px;
+    margin-top: 0px;
 }
 
 
