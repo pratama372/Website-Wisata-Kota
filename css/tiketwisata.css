@@ -155,9 +155,9 @@ nav {
 
 .hero-text {
   position: absolute;
-  bottom: 30px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   z-index: 2;
   text-align: center;
   color: white;
@@ -168,14 +168,13 @@ nav {
   margin-bottom: 10px;
 }
 
-.hero-text p a {
-  color: white;
-  text-decoration: none;
-  font-weight: 300;
+.hero-text h1 {
+  font-size: 4em;
+  margin-bottom: 15px;
 }
 
 .hero-text p {
-  font-size: 0.9em;
+  font-size: 1.2em;
   color: #ddd;
 }
 
