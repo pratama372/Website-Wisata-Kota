@@ -216,6 +216,7 @@ nav {
     color: white;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
+    margin-top: 70px;
 }
 
 
@@ -241,7 +242,7 @@ nav {
 
 .profile-hero h1 {
     font-family: "Playfair Display", serif;
-    font-size: 4rem;
+    font-size: 40px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
@@ -332,7 +333,7 @@ nav {
 
 .explore-header h2 {
     font-family: "Playfair Display", serif;
-    font-size: 3.5rem;
+    font-size: 30px;
     font-weight: 300;
     margin-bottom: 20px;
     line-height: 1.2;
