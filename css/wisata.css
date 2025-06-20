@@ -144,12 +144,16 @@ nav {
 
 .hero-content h1 {
     font-family: "Playfair Display", serif;
-    font-size: 4.5rem;
+    font-size: clamp(1.8rem, 6vw, 4.5rem);
     font-weight: 300;
     margin-bottom: 20px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     line-height: 1.2;
+    max-width: 90%;
+    word-break: break-word;
+    text-wrap: balance;
 }
+
 
 .hero-content p {
     font-size: 1.5rem;
