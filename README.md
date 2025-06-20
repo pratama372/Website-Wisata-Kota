@@ -8,7 +8,7 @@ BALIWonderful adalah website informasi tempat wisata di Bali yang menyajikan des
 | Nama                              | NIM        | Username Github     | Peran/Tugas                                                                                 |
 |-----------------------------------|------------|----------------------|---------------------------------------------------------------------------------------------|
 | Dewa Gede Pratama Yasa Putra     | 240010047  | @pratama327          | Halaman Denpasar, Gianyar, Badung; styling kabupaten & wisata (HTML, CSS, JavaScript)       |
-| Naufal Wiartawan Abdi Swastika   | 240010048  | @Naufall0000         | Halaman Homepage, Festival & Tradisi Bali, Travel Tips; styling homepage dan tips travel (HTML, CSS, JavaScript) dan membuat README |
+| Naufal Wiartawan Abdi Swastika   | 240010048  | @Naufall0000         | Halaman Homepage, Festival & Tradisi Bali, Travel Tips, Tiket Wisata; styling homepage dan tips travel (HTML, CSS, JavaScript) dan membuat README |
 | Made Shoma Nathawhimbardhi       | 240010097  | @Shoma097            | Halaman Bangli, Buleleng, Jembrana (HTML, JavaScript)                                     |
 | Albertus Surya Darmawan Susilo   | 240010040  | @bobythebaby         | Halaman Karangasem, Klungkung, Tabanan (HTML, JavaScript); mencari gambar kabupaten & wisata  |
 
@@ -29,6 +29,7 @@ BALIWonderful adalah website informasi tempat wisata di Bali yang menyajikan des
 - Bagian Destination Highlights yang berisi penjelasan singkat mengenai bali dan video yang bersumber dari Youtube.
 - Kartu Festival & Tradisi Bali yang berisi Galungan & Kuningan, Nyepi & Pengerupukan, Bali Arts Festival, Bali International Film Festival. Saat kartu di klik maka beralih ke halaman lain yang berisi penjelasan
 - Kartu tips perjalanan Travel Tips, Tips Liburan Musim Panas di Bali, Tips Liburan Saat Musim Hujan   di Bali, Merencanakan Perjalanan di Awal. Saat kartu di klik maka beralih ke halaman lain yang berisi penjelasan
+- Halaman tiket wisata yang berisi tentang informasi tentang harga tiket dan rekomendasi wisata di bali
 - Travel Gallery yang memiliki fitur scroll otomatis, saat mouse berada pada bagian gambar maka scroll akan terhenti, dan saat gambar di klik maka gambar bisa muncul.
 - Layout responsif yang dapat diakses di berbagai perangkat.
 - Footer dengan informasi kontak dan sosial media.
